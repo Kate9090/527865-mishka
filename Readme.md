@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Еремина](https://up.htmlacademy.ru/adaptive/12/user/527865).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мигаева](https://up.htmlacademy.ru/adaptive/12/tutors).
 
 ---
 
