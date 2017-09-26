@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="90" height="35" alt="«Мишка»">
-      </a>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
       <nav class="main-nav">
+        <a class="main-nav__logo">
+              <img class="main-nav__logo-image" src="img/logotype-mobile.svg" width="90" height="35" alt="«Мишка»">
+            </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-         <div class="main-nav__wrapper">
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -27,75 +29,67 @@
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-      </div>
       </nav>
-      </header>
-
-      <main class="page-main">
-
-          <h1 class="text catalog-title">
-            Каталог товаров</h1>
-
-          <section class="catalog">
-          <div class="catalog__wrapper">
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="title-wrapper">
+      <h1 class="catalog-title">Каталог товаров</h1>
+    </div>
+    <section class="catalog">
+      <div class="catalog__wrapper">
         <ul class="catalog-list">
           <li class="catalog-list__item catalog-list__item--bunny">
-            <img class="catalog-list__picture" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
-            <a class="catalog-list__name">Зайчик-попрыгайчик</a>
+            <a href="#"><img class="catalog-list__picture" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик"></a>
+            <a class="catalog-list__name"><h2>Зайчик-попрыгайчик</h2></a>
             <p class="catalog-list__caracteristics">Рост 30 см, вес 200 г</p>
-            <table class="catalog-list__price">
-              <tr>
-                <td class="catalog-list__cash"><a href="#">1 200 руб.</a></td>
-                <td class="catalog-list__basket"><a href="#"></a></td>
-              </tr>
-            </table>
+            <div class="catalog-list__price">
+              <span class="catalog-list__cash">1 200 руб.</span>
+              <a class="catalog-list__basket" href="#"></a>
+            </div>
           </li>
           <li class="catalog-list__item catalog-list__item--toybasket ">
-            <img class="catalog-list__picture" src="http://placehold.it/150x100" alt="Корзинка для белья">
-            <a class="catalog-list__name">Корзинка для белья</a>
+            <a href="#"><img class="catalog-list__picture" src="http://placehold.it/150x100" alt="Корзинка для белья"></a>
+            <a class="catalog-list__name"><h2>Корзинка для белья</h2></a>
             <p class="catalog-list__caracteristics">Диаметр 15см, высота 10см</p>
-            <table class="catalog-list__price">
-              <tr>
-                <td class="catalog-list__cash"><a href="#">690 руб.</a></td>
-                <td class="catalog-list__basket"><a href="#"></a></td>
-              </tr>
-            </table>
+            <div class="catalog-list__price">
+              <span class="catalog-list__cash">690 руб.</span>
+              <a class="catalog-list__basket" href="#"></a>
+            </div>
           </li>
           <li class="catalog-list__item catalog-list__item--basket">
-            <img class="catalog-list__picture" src="http://placehold.it/150x100" alt="Большая корзинка
-для игрушек">
-            <a class="catalog-list__name">Большая корзинка
-для игрушек</a>
+            <a href="#"><img class="catalog-list__picture" src="http://placehold.it/150x100" alt="Большая корзинка
+для игрушек"></a>
+            <a class="catalog-list__name"><h2>Большая корзинка
+для игрушек</h2></a>
             <p class="catalog-list__caracteristics">Диаметр 30см, высота 30см</p>
-            <table class="catalog-list__price">
-              <tr>
-                <td class="catalog-list__cash"><a href="#">1 500 руб.</a></td>
-                <td class="catalog-list__basket"><a href="#"></a></td>
-              </tr>
-            </table>
+            <div class="catalog-list__price">
+              <span class="catalog-list__cash">1 500 руб.</span>
+              <a class="catalog-list__basket" href="#"></a>
+            </div>
           </li>
-          </ul>
-          <div class="catalog-process">
-          <div class="catalog-process__video">
+        </ul>
+        <div class="catalog-process">
+          <div class="catalog-process__video"><img src="#" alt="video">
           </div>
+        </div>
+        <div class="catalog-process__order">
           <p class="catalog-process__legend">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          </div>
-          <button class="button catalog__toggle" type="button">Заказать</button>
-          </div>
-          </section>
-
-      </main>
-
-      <footer class="page-footer">
-        <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
+          <a class="button catalog__toggle">Заказать</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
           </li>
           <li class="social__item">
-           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-         </li>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Вконтакте</a>
           </li>
@@ -105,8 +99,8 @@
         <b class="copyright__text">Разработано:</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
+</body>
 
-  </body>
 </html>
