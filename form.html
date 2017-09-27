@@ -40,60 +40,96 @@
     </div>
     <section class="form">
       <div class="form__wrapper">
-        <article class="form__legend">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</article>
+        <p class="form__legend">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</p>
         <form class="" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__list">
             <div class="form__item">
-              <h3 class="form__name"><label for="type">Тип</label></h3>
-              <ul class="form__type-list">
-                <li><input id="type" type="radio" name="" value="Аксессуар для интерьера"></li>
-                <li><input id="type" type="radio" name="" value="Детская игрушка"></li>
-              </ul>
-            </div>
-            <div class="form__item">
-              <h3 class="form__name"><label for="color">Цвет</label></h3>
-              <ul class="form__color-list ">
-                <li class="form__color-list form__color-list--color"><input id="color" type="checkbox" name="" value="Белый"></li>
-                <li class="form__color-list form__color-list--color"><input id="color" type="checkbox" name="" value="Серый"></li>
-                <li class="form__color-list form__color-list--color"><input id="color" type="checkbox" name="" value="Тиффани"></li>
-                <li class="form__color-list form__color-list--color"><input id="color" type="checkbox" name="" value="Черный"></li>
-                <li class="form__color-list form__color-list--color"><input id="color" type="checkbox" name="" value="Розовый"></li>
-                <li class="form__color-list form__color-list--color"><input id="color" type="checkbox" name="" value="Оранжевый"></li>
-              </ul>
-            </div>
-            <div class="form__item">
-              <h3 class="form__name">ФИО</h3>
-              <ul class="form__fio-list">
-                <li>
-                  <p><label for="name">Имя:</p>
-                    <p><input id="name" type="text" name="" value="Введите ваше имя*" placeholder="Введите ваше имя*"  required></p>
+              <div class="item-wrapper">
+                <h3 class="form__name">Тип</h3>
+                <ul class="form__type-list">
+                  <li>
+                    <input id="design" type="radio" name="" value="Аксессуар для интерьера">
+                    <label for="design">Аксессуар для интерьера</label>
                   </li>
                   <li>
-                    <p><label for="sername">Фамилия:</p>
-                    <p><input id="sername" type="text" name="" value="Укажите фамилию*" placeholder="Укажите фамилию*"  required></p>
-                  </li>
-                  <li>
-                    <p><label for="father-name">Отчество:</p>
-                    <p><input id="father-name" type="text" name="" value="Отчество, если желаете" placeholder="Отчество, если желаете"></p>
+                    <input id="toy" type="radio" name="" value="Детская игрушка">
+                    <label for="toy">Детская игрушка</label>
                   </li>
                 </ul>
-          </div>
-            <div class="form__item">
-              <h3 class="form__name">ТЕЛ</h3>
-              <div class="form__data form__tel">
-              <p class="form__data-input form__tel-input"><input  type="text" name="" value="+7 ХХХ ХХ ХХ*" placeholder="+7 ХХХ ХХ ХХ*"  required></p>
-            </div>
-            </div>
-            <div class="form__item">
-              <h3 class="form__name">E-MAIL</h3>
-              <div class="form__data form__mail">
-              <p class="form__data-input form__mail-input"><input  type="text" name="" value="Ваш e-mail*" placeholder="Ваш e-mail*"  required></p>
               </div>
             </div>
             <div class="form__item">
-              <h3 class="form__name">ДОП</h3>
-              <div class="form__data form__add">
-              <p class="form__data-input form__add-input"><input  type="textarea" rows="3" name="" value="Опишите все ваши пожелания к заказу" placeholder="Опишите все ващши пожелания к заказу" ></p>
+              <div class="item-wrapper">
+                <h3 class="form__name"><label for="color">Цвет</label></h3>
+                <ul class="form__color-list ">
+                  <li class="form__color-list form__color-list--color">
+                    <input id="white" type="checkbox" name="" value="Белый">
+                    <label for="white">Белый</label>
+                  </li>
+                  <li class="form__color-list form__color-list--color">
+                    <input id="grey" type="checkbox" name="" value="Серый">
+                    <label for="grey">Серый</label>
+                  </li>
+                  <li class="form__color-list form__color-list--color">
+                    <input id="tiffany" type="checkbox" name="" value="Тиффани">
+                    <label for="tiffany">"Тиффани"</label>
+                  </li>
+                  <li class="form__color-list form__color-list--color">
+                    <input id="black" type="checkbox" name="" value="Черный">
+                    <label for="black">Черный</label>
+                  </li>
+                  <li class="form__color-list form__color-list--color">
+                    <input id="pink" type="checkbox" name="" value="Розовый">
+                    <label for="pink">Розовый</label>
+                  </li>
+                  <li class="form__color-list form__color-list--color">
+                    <input id="orange" type="checkbox" name="" value="Оранжевый">
+                    <label for="orange">Оранжевый</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="item-wrapper">
+                <h3 class="form__name">ФИО</h3>
+                <ul class="form__fio-list">
+                  <li>
+                    <label for="name">Имя:</label>
+                    <input id="name" type="text" name="" value="Введите ваше имя*" placeholder="Введите ваше имя*" required>
+                  </li>
+                  <li>
+                    <label for="sername">Фамилия:</label></p>
+                    <input id="sername" type="text" name="" value="Укажите фамилию*" placeholder="Укажите фамилию*" required>
+                  </li>
+                  <li>
+                    <label for="father-name">Отчество:</label></p>
+                    <input id="father-name" type="text" name="" value="Отчество, если желаете" placeholder="Отчество, если желаете">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="item-wrapper">
+                <h3 class="form__name">ТЕЛ</h3>
+                <div class="form__data form__tel">
+                  <input type="text" name="" value="+7 ХХХ ХХ ХХ*" placeholder="+7 ХХХ ХХ ХХ*" required>
+                </div>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="item-wrapper">
+                <h3 class="form__name">E-MAIL</h3>
+                <div class="form__data form__mail">
+                  <input type="text" name="" value="Ваш e-mail*" placeholder="Ваш e-mail*" required>
+                </div>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="item-wrapper">
+                <h3 class="form__name">ДОП</h3>
+                <div class="form__data form__add">
+                  <textarea type="textarea" rows="3" name="" value="Опишите все ваши пожелания к заказу" placeholder="Опишите все ващши пожелания к заказу">
+              </div>
               </div>
             </div>
           </div>
