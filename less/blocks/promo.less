@@ -7,3 +7,18 @@
   width: 100%;
   border: 1px solid blue;
 }
+@media (min-width: @tablet-width) {
+  .promo {
+    width: @tablet-width;
+    background-image: url("/img/hero-tablet.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 750px;
+    margin-top: 0;
+  }
+}
+@media (min-width: @desktop-width) {
+  .promo {
+    width: @desktop-width;
+  }
+}

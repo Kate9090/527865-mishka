@@ -3,11 +3,13 @@
 }
 
 .leader__wrapper {
+  width: 260px;
   margin: 0 30px;
+  border: 1px solid purple;
 }
 
 .leader__header--remark {
-  color: #63d1bb;
+  color: @green;
   text-transform: uppercase;
   font-size: 17px;
   font-family: "Open Sans";
@@ -16,6 +18,11 @@
 
 .leader__list td {
   border-bottom: 1px solid #f1f1f1;
+}
+
+.leader__toggle {
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .leader__price {
@@ -29,8 +36,46 @@
   font-weight: normal;
 }
 
+.leader__description p {
+  display: block;
+  width: 260px;
+}
+
+.leader__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
 .leader__header--text {
   font-size: 25px;
   font-family: "Open Sans";
   font-weight: bold;
+}
+@media (min-width: @tablet-width) {
+  .leader__header--remark {
+    text-align: center;
+    width: 80px;
+  }
+
+  .leader__header--text {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .leader__header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .leader__wrapper {
+    padding-left: 175px;
+  }
+
+  .leader__header--remark {
+    padding: 0 45px;
+  }
 }

@@ -5,4 +5,26 @@
 
 .main-nav {
   font-family: "Open Sans";
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: @tablet-width) {
+  .main-nav {
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .main-nav__logo {
+    width: 110px;
+    height: 50px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .main-nav {
+    justify-content: flex-end;
+  }
+
+  .main-nav__logo {
+    align-self: flex-start;
+  }
 }

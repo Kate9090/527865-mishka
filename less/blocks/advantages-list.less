@@ -1,11 +1,30 @@
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid purple;
 }
 
 .advantages-list__item {
-  flex-direction: column;
+  width: 300px;
   padding-top: 70px;
+  padding-right: 50px;
   border: 1px solid yellow;
+  font-size: 17px;
+  line-height: 20px;
+  color: @button-color;
+}
+@media (min-width: @tablet-width) {
+  .advantages-list {
+    width: 100%;
+  }
+
+  .advantages-list__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

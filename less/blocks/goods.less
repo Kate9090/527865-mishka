@@ -1,5 +1,5 @@
 .goods {
-  background-color: #63d1bb;
+  background-color: @green;
   width: 100%;
   margin-top: -65px;
   border: 1px solid purple;
@@ -16,6 +16,16 @@
   font-weight: bold;
 }
 
+.goods__name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 260px;
+  flex-direction: row;
+  border: 1px solid purple;
+  margin: auto;
+}
+
 .goods__name a {
   text-decoration: none;
   vertical-align: middle;
@@ -24,4 +34,24 @@
 
 .goods__wrapper {
   margin: 0 30px;
+}
+@media (min-width: @tablet-width) {
+  .goods {
+    margin-top: -120px;
+    height: 120px;
+  }
+
+  .goods__name {
+    flex-basis: 335px;
+    margin: auto;
+  }
+
+  .goods__name h2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .goods__name {
+    flex-basis: 525px;
+  }
 }
