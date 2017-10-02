@@ -15,3 +15,23 @@
 .form__item {
   border: 1px solid blue;
 }
+@media (min-width: @tablet-width) {
+  .form {
+    width: @tablet-width;
+  }
+
+  .form__wrapper {
+    margin: 0 50px;
+  }
+
+  .form__item:nth-child(2),
+  .form__item:nth-child(4),
+  .form__item:nth-child(5) {
+    background-color: @light-grey;
+  }
+}
+@media (min-width: @desktop-width) {
+  .form {
+    width: @desktop-width;
+  }
+}
