@@ -1,6 +1,5 @@
 .form {
-  width: 320px;
-  border: 1px solid blue;
+  .grid();
 }
 
 .form__legend {
@@ -9,19 +8,15 @@
 }
 
 .form__wrapper {
-  margin: 0 30px;
+  .mobile-wrapper();
 }
 
 .form__item {
   border: 1px solid blue;
 }
 @media (min-width: @tablet-width) {
-  .form {
-    width: @tablet-width;
-  }
-
   .form__wrapper {
-    margin: 0 50px;
+    .tablet-wrapper();
   }
 
   .form__item:nth-child(2),
@@ -31,7 +26,7 @@
   }
 }
 @media (min-width: @desktop-width) {
-  .form {
-    width: @desktop-width;
+  .form__wrapper {
+    .desktop-wrapper();
   }
 }

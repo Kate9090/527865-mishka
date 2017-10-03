@@ -20,13 +20,16 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  flex-basis: 260px;
+  justify-content: flex-start;
   flex-direction: row;
   border: 1px solid purple;
   margin: auto;
+  height: 200px;
+  min-width: 260px;
 }
 
 .goods__name a {
+  flex-basis: 50%;
   text-decoration: none;
   vertical-align: middle;
   text-align: left;
@@ -44,6 +47,7 @@
   .goods__name {
     flex-basis: 335px;
     margin: auto;
+    height: 120px;
   }
 
   .goods__name h2 {

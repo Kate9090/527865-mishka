@@ -1,12 +1,20 @@
 .advantages {
-  border: 1px solid blue;
+  .grid();
 }
 
 .advantages__wrapper {
-  margin: 0 30px;
+  .mobile-wrapper();
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    .tablet-wrapper();
+  }
+}
+
 @media (min-width: @desktop-width) {
   .advantages__wrapper {
     padding: 0 175px;
+    .desktop-wrapper();
   }
 }

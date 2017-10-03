@@ -1,17 +1,34 @@
 .main-nav__logo {
   display: block;
   text-align: center;
+  flex-grow: 1;
 }
 
 .main-nav {
   font-family: "Open Sans";
+  align-items: center;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.main-nav__toggle {
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  fill: black;
 }
 @media (min-width: @tablet-width) {
   .main-nav {
     justify-content: flex-start;
-    align-items: stretch;
+    height: 92px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__logo {
@@ -22,9 +39,5 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     justify-content: flex-end;
-  }
-
-  .main-nav__logo {
-    align-self: flex-start;
   }
 }

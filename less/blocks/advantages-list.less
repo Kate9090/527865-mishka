@@ -2,17 +2,19 @@
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   border: 1px solid purple;
+
+
 }
 
 .advantages-list__item {
-  width: 300px;
+  // margin: auto;
   padding-top: 70px;
-  padding-right: 50px;
+width: 300px;
   border: 1px solid yellow;
   font-size: 17px;
   line-height: 20px;
@@ -21,10 +23,19 @@
 @media (min-width: @tablet-width) {
   .advantages-list {
     width: 100%;
+
   }
 
   .advantages-list__item {
     font-size: 20px;
     line-height: 22px;
+    flex-basis: 50%;
+    // width: 50%;
+  }
+}
+@media (min-width: @desktop-width) {
+
+  .advantages-list__item {
+    flex-basis: 33%;
   }
 }

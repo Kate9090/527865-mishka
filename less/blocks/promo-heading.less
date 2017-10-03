@@ -5,4 +5,16 @@
   font-size: 27px;
   font-family: "Open Sans";
   font-weight: bold;
+  .mobile-wrapper();
+}
+@media (min-width: @tablet-width) {
+  .promo-heading {
+    .tablet-wrapper();
+    font-size: 43px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .promo-heading {
+    .desktop-wrapper();
+  }
 }

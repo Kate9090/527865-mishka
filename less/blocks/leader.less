@@ -1,10 +1,9 @@
 .leader {
-  border: 1px solid blue;
+  .grid();
 }
 
 .leader__wrapper {
-  width: 260px;
-  margin: 0 30px;
+  .mobile-wrapper();
   border: 1px solid purple;
 }
 
@@ -64,6 +63,16 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  .leader__wrapper {
+    .tablet-wrapper();
+  }
+
+  .leader__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 @media (min-width: @desktop-width) {
   .leader__header {
@@ -72,10 +81,12 @@
   }
 
   .leader__wrapper {
-    padding-left: 175px;
+    margin-left: 175px;
+    .desktop-wrapper();
   }
 
   .leader__header--remark {
     padding: 0 45px;
+    margin-right: 30px;
   }
 }
