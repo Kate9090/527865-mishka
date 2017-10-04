@@ -1,9 +1,10 @@
 .reviews {
-  border: 1px solid blue;
+  .grid();
+  .font();
 }
 
 .reviews__wrapper {
-  .mobile-wrapper();
+  .container();
 }
 
 .reviews__item {
@@ -42,14 +43,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reviews {
+  .reviews__wrapper {
     background-image: url("../img/review@1x.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
-  }
-
-  .reviews__wrapper {
-    .tablet-wrapper();
   }
 
   .reviews__title {
@@ -72,6 +69,5 @@
 
   .reviews__wrapper {
     padding-left: 175px;
-    .desktop-wrapper();
   }
 }

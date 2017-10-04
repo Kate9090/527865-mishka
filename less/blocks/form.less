@@ -1,5 +1,6 @@
 .form {
   .grid();
+  .font();
 }
 
 .form__legend {
@@ -8,27 +9,17 @@
 }
 
 .form__wrapper {
-  .mobile-wrapper();
+  .container();
 }
 
 .form__item {
-  border: 1px solid blue;
+  .grid();
 }
 
 @media (min-width: @tablet-width) {
-  .form__wrapper {
-    .tablet-wrapper();
-  }
-
   .form__item:nth-child(2),
   .form__item:nth-child(4),
   .form__item:nth-child(5) {
     background-color: @light-grey;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .form__wrapper {
-    .desktop-wrapper();
   }
 }

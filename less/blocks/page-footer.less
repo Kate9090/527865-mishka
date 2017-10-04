@@ -1,9 +1,6 @@
 .page-footer {
-  background-color: #f1f1f1;
-  width: 320px;
-  margin: 0 auto;
-  border: 1px solid blue;
-  font-family: "Open Sans";
+  .grid();
+  .font();
 }
 
 .page-footer__box {
@@ -35,7 +32,8 @@
 }
 
 .page-footer__wrapper {
-  .mobile-wrapper();
+  .container();
+  background-color: #f1f1f1;
 }
 
 .social__link--instagram {
@@ -78,16 +76,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
-    width: @tablet-width;
-  }
-
   .page-footer__logo {
     display: block;
-  }
-
-  .page-footer__wrapper {
-    .tablet-wrapper();
   }
 
   .page-footer__box {
@@ -100,12 +90,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    width: @desktop-width;
-  }
-
   .page-footer__wrapper {
     padding-left: 175px;
-    .desktop-wrapper();
   }
 }

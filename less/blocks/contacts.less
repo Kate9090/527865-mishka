@@ -1,10 +1,11 @@
 .contacts {
   .grid();
+  .font();
 }
 
 .contacts__wrapper {
-  .mobile-wrapper();
-  .grid();
+  .container();
+
 }
 
 .contacts__item {
@@ -55,7 +56,8 @@
 }
 
 .contacts__toggle {
-  margin: 40px 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .contacts__flex {
@@ -74,10 +76,6 @@
     margin: 40px auto;
   }
 
-  .contacts__wrapper {
-    .tablet-wrapper();
-  }
-
   .contacts__map {
     background-image: url("../img/map-tablet@1x.jpg");
     width: @tablet-width;
@@ -92,8 +90,7 @@
 @media (min-width: @desktop-width) {
   .contacts__wrapper {
     padding-left: 175px;
-    .desktop-wrapper();
-    width: 400px;
+
   }
 
   .contacts__flex {

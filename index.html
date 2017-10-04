@@ -36,9 +36,11 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main>
     <section class="promo">
-      <h1 class="promo-heading">Милые штучки ручной работы для дома</h1>
+      <div class="promo__wrapper">
+        <h1 class="promo-heading">Милые штучки ручной работы для дома</h1>
+      </div>
     </section>
     <section class="goods">
       <div class="goods__wrapper">
@@ -50,11 +52,12 @@
     </section>
 
     <section class="leader">
-      <div class="leader__header">
-        <h2 class="leader__header--text">Вязаные корзинки</h2>
-        <span class="leader__header--remark">товар недели</span>
-      </div>
       <div class="leader__wrapper">
+        <div class="leader__header">
+          <h2 class="leader__header--text">Вязаные корзинки</h2>
+          <span class="leader__header--remark">товар недели</span>
+        </div>
+
         <article class="leader__description">
           <div>
             <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -141,8 +144,8 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__flex">
-        <div class="contacts__wrapper">
+      <div class="contacts__wrapper">
+        <div class="contacts__flex">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__item">
             <div class="contacts__mail">
@@ -154,11 +157,11 @@
               <p class="contacts__adress-name">г. Санкт-Петербург,<br> ул. Большая Конюшенная, <br> д. 19/8, офис 101</p>
             </div>
           </div>
+          <div class="contacts__map">
+          </div>
         </div>
-        <div class="contacts__map">
-        </div>
+        <a class="button contacts__toggle">Напишите нам</a>
       </div>
-      <a class="button contacts__toggle">Напишите нам</a>
     </section>
   </main>
 

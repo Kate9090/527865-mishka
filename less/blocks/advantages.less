@@ -1,20 +1,14 @@
 .advantages {
   .grid();
+  .font();
 }
 
 .advantages__wrapper {
-  .mobile-wrapper();
-}
-
-@media (min-width: @tablet-width) {
-  .advantages__wrapper {
-    .tablet-wrapper();
-  }
+.container();
 }
 
 @media (min-width: @desktop-width) {
   .advantages__wrapper {
     padding: 0 175px;
-    .desktop-wrapper();
-  }
+    }
 }
