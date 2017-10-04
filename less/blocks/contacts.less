@@ -1,9 +1,15 @@
 .contacts {
   .grid();
-  .font();
 }
 
 .contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__text-flex {
+  display: flex;
+  flex-wrap: wrap;
   .container();
 }
 
@@ -39,8 +45,8 @@
 }
 
 .contacts__item span {
-  width: 50px;
-  padding-right: 20px;
+  width: 60px;
+  padding-right: 10px;
 }
 
 .contacts__item a,
@@ -52,11 +58,11 @@
   background-image: url("../img/map-mobile@1x.jpg");
   width: 320px;
   height: 460px;
+  margin: 0 auto;
 }
 
 .contacts__toggle {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto;
 }
 
 .contacts__flex {
@@ -71,8 +77,16 @@
     flex-basis: 50%;
   }
 
+  .contacts__text-flex {
+    flex-direction: column;
+  }
+
   .contacts__toggle {
     margin: 40px auto;
+  }
+
+  .contacts__wrapper {
+    width: @tablet-width;
   }
 
   .contacts__map {
@@ -88,7 +102,12 @@
 
 @media (min-width: @desktop-width) {
   .contacts__wrapper {
-    padding-left: 175px;
+    width: @desktop-width;
+  }
+
+  .contacts__text-flex {
+    display: block;
+    width: 300px;
   }
 
   .contacts__flex {
@@ -112,6 +131,6 @@
   }
 
   .contacts__toggle {
-    margin: 40px auto 40px 175px;
+    margin: 40px auto;
   }
 }
