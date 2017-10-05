@@ -1,3 +1,35 @@
-.social__list li {
-  list-style-type: none;
+.social__link--instagram {
+  display: block;
+  background-image: url("../img/icon-insta.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  .grid();
+  width: 35px;
+  height: 35px;
+}
+
+.social__link--facebook {
+  display: block;
+  background-image: url("../img/icon-fb.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  .grid();
+  width: 35px;
+  height: 35px;
+}
+
+.social__link--twitter {
+  display: block;
+  background-image: url("../img/icon-twitter.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  .grid();
+  width: 35px;
+  height: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    flex-grow: 1;
+  }
 }
