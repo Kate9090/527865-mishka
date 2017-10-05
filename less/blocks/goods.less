@@ -2,8 +2,7 @@
   margin-top: -65px;
   border: 1px solid purple;
   padding: 0;
-  height: 200px;
-  // background-color: @green;
+  margin: 0;
 }
 
 .goods__name h2 {
@@ -25,7 +24,7 @@
 }
 
 .goods__flex {
-  padding: 10px 40px;
+  padding: 10px 30px;
   border: 2px solid yellow;
   width: 100%;
   display: flex;
@@ -35,20 +34,25 @@
   cursor: pointer;
 }
 
+.goods__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .goods__name a {
   flex-basis: 50%;
   text-decoration: none;
   vertical-align: middle;
   text-align: left;
 }
+
 @media (min-width: @tablet-width) {
   .goods {
     margin-top: -120px;
-    height: 120px;
   }
 
   .goods__wrapper {
-    width: 778px;
+    width: 678px;
     margin: 0 auto;
   }
 
@@ -58,11 +62,12 @@
 
   .goods__flex {
     width: 50%;
-    padding: 15px 40px;
+    padding: 15px 30px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .goods__wrapper {
-    width: 1250px;
+    width: 1050px;
   }
 }
