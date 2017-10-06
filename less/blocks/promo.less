@@ -11,6 +11,7 @@
 
 .promo__wrapper {
   .container();
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -20,6 +21,20 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 750px;
+    margin-top: -90px;
+  }
+
+  .promo__wrapper {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    padding: 0;
+  }
+
+  .promo {
     margin-top: 0;
   }
 }
