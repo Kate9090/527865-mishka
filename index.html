@@ -18,8 +18,8 @@
             <img class="main-nav__logo-image" src="img/mishka-logo.jpg" width="90" height="35" alt="«Мишка»">
           </a>
         <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list main-nav__list--closed site-list">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__logo" href="https://htmlacademy-adaptive.github.io/527865-mishka/4/">
                 <img class="site-list__item-image" src="img/mishka-logo.jpg" width="90" height="35" alt="«Мишка»">
               </a>
@@ -104,10 +104,10 @@
           </div>
         </article>
         <div class="leader__block">
-        <div class="leader__price">
-          Цена:990 руб.
-        </div>
-        <a class="button leader__toggle">Заказать</a>
+          <div class="leader__price">
+            Цена:990 руб.
+          </div>
+          <a class="button leader__toggle">Заказать</a>
         </div>
       </div>
     </section>
@@ -140,19 +140,23 @@
 
     <section class="reviews">
       <div class="reviews__wrapper slider">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
-          </blockquote>
-          <cite class="reviews__author-name">Анастасия Красильникова</cite>
-          <p class="reviews__contact">@misssssiskras</p>
+        <div class="reviews__flex">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+            </blockquote>
+          </div>
+          <div class="reviews__author slider__item">
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <p class="reviews__contact">@misssssiskras</p>
+          </div>
+          <div class="reviews__toggles slider__arrows">
+            <a class="slider__arrows--prev"></a>
+            <a class="slider__arrows--next"></a>
+          </div>
+          <a href="#" class="button reviews__toggle">Написать</a>
         </div>
-        <div class="reviews__toggles slider__arrows">
-          <a class="slider__arrows--prev"></a>
-          <a class="slider__arrows--next"></a>
-        </div>
-        <a href="#" class="button reviews__toggle">Написать</a>
       </div>
     </section>
 
