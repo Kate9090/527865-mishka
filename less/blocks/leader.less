@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+.leader__block {
+  display: block;
+  .grid();
+}
+
 .leader__header--remark {
   color: @green;
   text-transform: uppercase;
@@ -57,6 +62,11 @@
     width: 80px;
   }
 
+  .leader__block {
+    width: 292px;
+    margin-top: -150px;
+  }
+
   .leader__header--text {
     font-size: 43px;
     line-height: 50px;
@@ -74,18 +84,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .leader__wrapper {
+    padding: 0 0 0 175px;
+  }
+
   .leader__header {
     flex-direction: row-reverse;
     justify-content: flex-end;
-  }
-
-  .leader__wrapper {
-    padding: 0;
-    padding-left: 175px;
+    margin-left: -175px;
   }
 
   .leader__header--remark {
-    padding: 0 45px;
-    margin-right: 30px;
+    text-align: center;
+    width: 85px;
+    margin: 0 40px;
   }
 }
