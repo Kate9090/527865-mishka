@@ -33,6 +33,7 @@
 
   .site-list__item a {
     border-top: 0 solid #886e5b;
+    // max-width: 25%;
   }
 
   .site-list__item {
@@ -47,34 +48,50 @@
     flex-grow: 1;
   }
 
-  .site-list__item:first-child a {
-    margin: auto;
-  }
-
-  .site-list__item:nth-child(2) {
+  .site-list__item:nth-child(3) {
     order: 4;
     width: 25%;
   }
 
-  .site-list__item:nth-child(3) {
+  .site-list__item:nth-child(4) {
     order: 5;
     width: 25%;
   }
 
-  .site-list__item:nth-child(4) a {
+  .site-list__item:nth-child(2) {
+    display: none;
+    width: 0;
+  }
+
+  .site-list__item:nth-child(5) a {
     font-size: 0;
   }
 
-  .site-list__item:nth-child(4) {
+  .site-list__item:nth-child(5) {
     order: 2;
     font-size: 0;
     min-width: 80px;
     flex-grow: 1;
   }
 
-  .site-list__item:last-child {
+  .site-list__item:nth-child(6) {
     order: 3;
     width: 39%;
+    flex-grow: 1;
+  }
+
+  .site-list__item:nth-child(7) {
+    display: none;
+  }
+
+  .site-list__item:nth-child(8) {
+    display: none;
+  }
+
+  .site-list__item:last-child {
+    display: block;
+    order: 8;
+    width: 48%;
     flex-grow: 1;
   }
 
@@ -91,28 +108,53 @@
     flex-grow: 1;
   }
 
-  .site-list__item:nth-child(2) {
+  .site-list__item:first-child a {
+    margin: auto;
+  }
+
+  .site-list__item:nth-child(3) {
     order: 1;
     flex-grow: 1;
     width: 17%;
   }
 
-  .site-list__item:nth-child(3) {
+  .site-list__item:nth-child(4) {
     order: 2;
     width: 18%;
     flex-grow: 1;
   }
 
-  .site-list__item:nth-child(4) {
+  .site-list__item:nth-child(5) {
     order: 4;
     font-size: 0;
     min-width: 80px;
     flex-grow: 1;
   }
 
-  .site-list__item:last-child {
-    order: 5;
+  .site-list__item:nth-child(6) {
+    order: 3;
+    width: 32%;
+    flex-grow: 1;
+  }
+
+  .site-list__item:nth-child(7) {
+    display: block;
+    order: 6;
     width: 25%;
+    flex-grow: 1;
+  }
+
+  .site-list__item:nth-child(8) {
+    display: block;
+    order: 7;
+    width: 25%;
+    flex-grow: 1;
+  }
+
+  .site-list__item:last-child {
+    display: block;
+    order: 8;
+    width: 48%;
     flex-grow: 1;
   }
 }

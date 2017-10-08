@@ -91,14 +91,17 @@
       display: block;
     }
   }
+  .main-nav__list--closed .main-nav__desktop {
+    display: none;
+
+    &--active {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav__list {
+    .main-nav__list {
     align-items: center;
     display: flex;
     flex-direction: row;
