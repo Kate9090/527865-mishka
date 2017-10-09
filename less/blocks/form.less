@@ -112,12 +112,50 @@ input[type="checkbox"]:checked + label::after {
   background-repeat: no-repeat;
 }
 
+input[placeholder] {
+  color: grey;
+}
+
+.form__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form__text {
+  height: 55px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.form__data {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.form__toggle {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.form__small{
+  display: none;
+}
 
 @media (min-width: @tablet-width) {
   .form__item:nth-child(2),
   .form__item:nth-child(4),
   .form__item:nth-child(5) {
     background-color: @light-grey;
+  }
+
+  .form__toggle {
+    margin-top: 135px;
+    margin-bottom: 50px;
   }
 
   .form__wrapper {
@@ -128,32 +166,78 @@ input[type="checkbox"]:checked + label::after {
     font-size: 17px;
   }
 
-
-
-
   .form__item-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .form__border {
-    border-top: none;
-    width: 165px;
-    min-height: 30px;
+
+  .form__fio-list {
+    flex-grow: 1;
   }
-  .form__color-list{
+
+  .form__border {
+    display: block;
+    border-top: none;
+    margin: 0;
+  }
+
+  .form__name {
+    position: relative;
+    background-color: transparent;
+    display: block;
+    padding-right: 0;
+    width: 165px;
+    top: 0;
+  }
+
+  .form__color-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   .form__color-list--color {
     width: 50%;
   }
 
   .form__data {
     width: 100%;
+    flex-grow: 1;
+  }
+
+  .form__small{
+    display: block;
+    margin-top:-80px;
+    font-size:17px;
+    color:grey;
+    margin-left:60%;
+    margin-bottom:50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__color-list--color {
+    width: 33%;
+  }
+
+  .form__name {
+    text-align: center;
+    width: 175px;
+    top: 20px;
+  }
+
+  .form__fio-list {
+    margin-right: 175px;
+  }
+
+  .form__data {
+    margin-right: 175px;
+  }
+  .form__toggle {
+    margin-left: 175px;
   }
 }

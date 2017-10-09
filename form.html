@@ -108,17 +108,17 @@
               <div class="form__item-wrapper">
                 <div class="form__border"><h3 class="form__name">ФИО</h3></div>
                 <ul class="form__fio-list">
-                  <li>
+                  <li class="form__flex">
                     <label for="name">Имя:</label>
-                    <input id="name" type="text" name="" value="Введите ваше имя*" placeholder="Введите ваше имя*" required>
+                    <input class="form__text" id="name" type="text" name="" value="Введите ваше имя*" placeholder="Введите ваше имя*" required>
                   </li>
-                  <li>
+                  <li class="form__flex">
                     <label for="sername">Фамилия:</label>
-                    <input id="sername" type="text" name="" value="Укажите фамилию*" placeholder="Укажите фамилию*" required>
+                    <input class="form__text" id="sername" type="text" name="" value="Укажите фамилию*" placeholder="Укажите фамилию*" required>
                   </li>
-                  <li>
+                  <li class="form__flex">
                     <label for="father-name">Отчество:</label>
-                    <input id="father-name" type="text" name="" value="Отчество, если желаете" placeholder="Отчество, если желаете">
+                    <input class="form__text" id="father-name" type="text" name="" value="Отчество, если желаете" placeholder="Отчество, если желаете">
                   </li>
                 </ul>
               </div>
@@ -127,7 +127,7 @@
               <div class="form__item-wrapper">
                 <div class="form__border"><h3 class="form__name">ТЕЛ</h3></div>
                 <div class="form__data form__tel">
-                  <input type="text" name="" value="+7 ХХХ ХХ ХХ*" placeholder="+7 ХХХ ХХ ХХ*" required>
+                  <input class="form__text" type="text" name="" value="+7 ХХХ ХХ ХХ*" placeholder="+7 ХХХ ХХ ХХ*" required>
                 </div>
               </div>
             </div>
@@ -135,7 +135,7 @@
               <div class="form__item-wrapper">
                 <div class="form__border"><h3 class="form__name">E-MAIL</h3></div>
                 <div class="form__data form__mail">
-                  <input type="text" name="" value="Ваш e-mail*" placeholder="Ваш e-mail*" required>
+                  <input class="form__text" type="text" name="" value="Ваш e-mail*" placeholder="Ваш e-mail*" required>
                 </div>
               </div>
             </div>
@@ -143,12 +143,13 @@
               <div class="form__item-wrapper">
                 <div class="form__border"><h3 class="form__name">ДОП</h3></div>
                 <div class="form__data form__add">
-                  <textarea name="name" rows="3" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                  <textarea class="form__text" name="name" rows="3" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </div>
             </div>
           </div>
           <input type="submit" class="button form__toggle" name="" value="ОТПРАВИТЬ ЗАКАЗ">
+          <small class="form__small">*Поля обязательны для заполнения</small>
         </form>
       </div>
     </section>
