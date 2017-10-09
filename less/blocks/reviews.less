@@ -17,6 +17,18 @@
   color: @button-color;
 }
 
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.reviews__contact {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
 .reviews__title {
   font-size: 25px;
   line-height: 30px;
@@ -33,7 +45,6 @@
   border: 0.5px solid #ececec;
   display: block;
   text-align: center;
-  height: 50px;
   color: black;
   margin-bottom: 40px;
 }
@@ -41,6 +52,9 @@
 .reviews__toggle {
   margin-bottom: 50px;
   margin-top: 70px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 12px 0 18px 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -95,5 +109,10 @@
 @media (min-width: @desktop-width) {
   .reviews__flex {
     margin-bottom: 150px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
