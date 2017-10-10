@@ -6,7 +6,14 @@
   display: block;
   color: @button-color;
   font-size: 13px;
+  line-height: 24px;
   margin-bottom: 20px;
+}
+
+.form__item-wrapper {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 .form__wrapper {
@@ -28,6 +35,8 @@
   display: inline-block;
   padding-right: 15px;
   top: -30px;
+  font-size: 17px;
+  line-height: 16px;
 }
 
 input[type="radio"] {
@@ -144,7 +153,6 @@ input[placeholder] {
 .form__small {
   display: none;
 }
-
 @media (min-width: @tablet-width) {
   .form__item:nth-child(2),
   .form__item:nth-child(4),
@@ -159,6 +167,7 @@ input[placeholder] {
 
   .form__legend {
     font-size: 17px;
+    line-height: 30px;
   }
 
   .form__item-wrapper {
@@ -166,6 +175,7 @@ input[placeholder] {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    font-size: 19px;
   }
 
   .form__fio-list {
@@ -185,6 +195,8 @@ input[placeholder] {
     padding-right: 0;
     width: 165px;
     top: 0;
+    font-size: 17px;
+    line-height: 16px;
   }
 
   .form__color-list {
@@ -213,7 +225,6 @@ input[placeholder] {
     margin-bottom: 50px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .form__color-list--color {
     width: 33%;
