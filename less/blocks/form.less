@@ -7,10 +7,10 @@
   color: @button-color;
   font-size: 13px;
   line-height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.form__item-wrapper {
+.form__type-list label{
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -23,7 +23,7 @@
 .form__border {
   border-top: 1px solid @green;
   position: relative;
-  margin: 40px 0 20px;
+  margin: 30px 0 20px;
 }
 
 .form__name {
@@ -34,7 +34,7 @@
   background-color: #ffffff;
   display: inline-block;
   padding-right: 15px;
-  top: -30px;
+  top: -23px;
   font-size: 17px;
   line-height: 16px;
 }
@@ -44,15 +44,13 @@ input[type="radio"] {
 }
 
 input[type="radio"] + label {
-  line-height: 42px;
-  font-size: 17px;
   font-weight: bold;
   display: inline-block;
   cursor: pointer;
-  vertical-align: middle;
+  vertical-align: bottom;
   position: relative;
   padding-left: 65px;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 input[type="radio"] + label::before {
@@ -61,8 +59,8 @@ input[type="radio"] + label::before {
   top: 0;
   left: 0;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: 1px solid #000000;
   border-radius: 50%;
 }
@@ -152,6 +150,10 @@ input[placeholder] {
 
 .form__small {
   display: none;
+}
+
+.form__item {
+  margin-bottom: 55px;
 }
 
 @media (min-width: @tablet-width) {
