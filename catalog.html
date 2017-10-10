@@ -5,68 +5,84 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <nav class="main-nav">
-        <a class="main-nav__logo">
-              <img class="main-nav__logo-image" src="img/mishka-logo.jpg" width="90" height="35" alt="«Мишка»">
-            </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list main-nav__list--closed site-list">
+          <li class="main-nav__logo site-list__item site-list__item--active">
+            <a class="site-list__logo" href="https://htmlacademy-adaptive.github.io/527865-mishka/4/">
+                <img class="site-list__item-image" src="img/mishka-logo.jpg" width="90" height="35" alt="«Мишка»">
+              </a>
+          </li>
+          <li  class="main-nav__toggle site-list__item"></li>
+          <li class="site-list__item main-nav__mobile">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item main-nav__mobile">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item main-nav__mobile">
             <a href="#">Поиск по сайту</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item main-nav__mobile">
             <a href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="site-list__item main-nav__mobile main-nav__desktop">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item main-nav__mobile main-nav__desktop">
+            <a href="#">Распродажа</a>
+          </li>
+          <li class="site-list__item main-nav__mobile main-nav__desktop">
+            <a href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="page-main">
-    <div class="title-wrapper">
-      <h1 class="catalog-title">Каталог товаров</h1>
-    </div>
+  <main>
+    <section class="title-page">
+      <div class="title-wrapper">
+        <h1 class="catalog-title">Каталог товаров</h1>
+      </div>
+    </section>
     <section class="catalog">
       <div class="catalog__wrapper">
         <ul class="catalog-list">
           <li class="catalog-list__item catalog-list__item--bunny">
-            <a href="#"><img class="catalog-list__picture" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик"></a>
-            <a class="catalog-list__name"><h2>Зайчик-попрыгайчик</h2></a>
-            <p class="catalog-list__caracteristics">Рост 30 см, вес 200 г</p>
-            <div class="catalog-list__price">
-              <span class="catalog-list__cash">1 200 руб.</span>
-              <a class="catalog-list__basket" href="#"></a>
+            <div><a href="#"><img class="catalog-list__picture" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик"></a></div>
+            <div class="catalog-list-description"><a class="catalog-list__name"><h2>Зайчик-попрыгайчик</h2></a>
+              <p class="catalog-list__caracteristics">Рост 30 см, вес 200 г</p>
+              <div class="catalog-list__price">
+                <span class="catalog-list__cash">1 200 руб.</span>
+                <a class="catalog-list__basket" href="#"></a>
+              </div>
             </div>
           </li>
           <li class="catalog-list__item catalog-list__item--toybasket ">
-            <a href="#"><img class="catalog-list__picture" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья"></a>
-            <a class="catalog-list__name"><h2>Корзинка для белья</h2></a>
-            <p class="catalog-list__caracteristics">Диаметр 15см, высота 10см</p>
-            <div class="catalog-list__price">
-              <span class="catalog-list__cash">690 руб.</span>
-              <a class="catalog-list__basket" href="#"></a>
+            <div><a href="#"><img class="catalog-list__picture" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья"></a></div>
+            <div class="catalog-list-description"><a class="catalog-list__name"><h2>Корзинка для белья</h2></a>
+              <p class="catalog-list__caracteristics">Диаметр 15см, высота 10см</p>
+              <div class="catalog-list__price">
+                <span class="catalog-list__cash">690 руб.</span>
+                <a class="catalog-list__basket" href="#"></a>
+              </div>
             </div>
           </li>
           <li class="catalog-list__item catalog-list__item--basket">
-            <a href="#"><img class="catalog-list__picture" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка
-для игрушек"></a>
-            <a class="catalog-list__name"><h2>Большая корзинка
-для игрушек</h2></a>
-            <p class="catalog-list__caracteristics">Диаметр 30см, высота 30см</p>
-            <div class="catalog-list__price">
-              <span class="catalog-list__cash">1 500 руб.</span>
-              <a class="catalog-list__basket" href="#"></a>
+            <div><a href="#"><img class="catalog-list__picture" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка
+для игрушек"></a></div>
+            <div class="catalog-list-description"><a class="catalog-list__name"><h2>Большая корзинка для игрушек</h2></a>
+              <p class="catalog-list__caracteristics">Диаметр 30см, высота 30см</p>
+              <div class="catalog-list__price">
+                <span class="catalog-list__cash">1 500 руб.</span>
+                <a class="catalog-list__basket" href="#"></a>
+              </div>
             </div>
           </li>
         </ul>
@@ -84,23 +100,26 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper page-footer__flex">
+      <a class="page-footer__logo" href="https://htmlacademy-adaptive.github.io/527865-mishka/4/">
+          <img class="page-footer__logo-image" src="img/mishka-logo.jpg" width="90" height="35" alt="«Мишка»">
+        </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </div>
   </footer>

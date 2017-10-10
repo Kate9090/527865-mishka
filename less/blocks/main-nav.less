@@ -1,8 +1,113 @@
 .main-nav__logo {
   display: block;
-  text-align: center;
+  flex-grow: 1;
+  align-self: center;
 }
 
-.main-nav {
-  font-family: "Open Sans";
+.main-nav__list {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  flex-wrap: wrap;
+  font-weight: bold;
+  color: #000000;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.main-nav__toggle {
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  fill: black;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+  border: none;
+
+  &:active,
+  &:hover {
+    background-color: red;
+  }
+
+  .main-nav__list--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  }
+
+  .main-nav__list--opened .main-nav__toggle {
+    top: 0;
+    right: auto;
+    left: 0;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      width: 36px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::after,
+    &:active::before {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+@media (max-width: 678px) {
+  .main-nav__list--closed .main-nav__mobile {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .main-nav__list--closed .main-nav__desktop {
+    display: none;
+
+    &--active {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #000000;
+  }
 }

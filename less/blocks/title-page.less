@@ -1,0 +1,26 @@
+.title-page {
+  .grid;
+  background-color: #fafafa;
+}
+
+.title-wrapper {
+  height: 180px;
+  .container();
+}
+
+@media (min-width: @tablet-width) {
+  .title-page {
+    margin-top: -80px;
+  }
+
+  .title-wrapper {
+    height: 255px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title-wrapper {
+    margin-bottom: 130px;
+  }
+}

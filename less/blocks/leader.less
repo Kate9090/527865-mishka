@@ -1,36 +1,123 @@
 .leader {
-  border: 1px solid blue;
+  .grid();
 }
 
 .leader__wrapper {
-  margin: 0 30px;
+  .container();
+}
+
+.leader__block {
+  display: block;
+  .grid();
 }
 
 .leader__header--remark {
-  color: #63d1bb;
+  color: @green;
   text-transform: uppercase;
   font-size: 17px;
-  font-family: "Open Sans";
+  line-height: 20px;
   font-weight: bold;
 }
 
 .leader__list td {
   border-bottom: 1px solid #f1f1f1;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.leader__toggle {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 12px 0 18px 0;
 }
 
 .leader__price {
   text-align: center;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .leader__description {
   color: @button-color;
+}
+
+.leader__description p {
+  display: block;
+  width: 260px;
   font-size: 15px;
-  font-family: "Open Sans";
+  line-height: 24px;
   font-weight: normal;
+}
+
+.leader__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 }
 
 .leader__header--text {
   font-size: 25px;
-  font-family: "Open Sans";
+  line-height: 30px;
   font-weight: bold;
+}
+
+@media (min-width: @tablet-width) {
+  .leader__header--remark {
+    text-align: center;
+    width: 80px;
+    line-height: 17px;
+  }
+
+  .leader__block {
+    width: 292px;
+    margin-top: -150px;
+  }
+
+  .leader__header--text {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .leader__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .leader__description p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .leader__price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .leader__wrapper {
+    padding-left: 175px;
+  }
+
+  .leader__header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: -175px;
+  }
+
+  .leader__header--remark {
+    text-align: center;
+    width: 85px;
+    margin: 0 40px;
+  }
+
+  .leader__header--text {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
