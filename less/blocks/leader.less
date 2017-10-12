@@ -6,6 +6,12 @@
   .container();
 }
 
+.leader-image {
+  background-color: #fafafa;
+  margin: 30px 0 15px;
+  .grid();
+}
+
 .leader__block {
   display: block;
   .grid();
@@ -14,15 +20,17 @@
 .leader__header--remark {
   color: @green;
   text-transform: uppercase;
+  margin-top: -14px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
 }
 
-.leader__list td {
+.leader__item {
   border-bottom: 1px solid #f1f1f1;
   font-size: 15px;
   line-height: 20px;
+  padding: 9px 0 8px;
 }
 
 .leader__toggle {
@@ -30,7 +38,7 @@
   margin-bottom: 40px;
   font-size: 17px;
   line-height: 20px;
-  padding: 12px 0 18px 0;
+  padding: 12px 0 18px;
 }
 
 .leader__price {
@@ -43,12 +51,14 @@
   color: @button-color;
 }
 
-.leader__description p {
+.leader__legend {
+  margin-top: 21px;
   display: block;
   width: 260px;
   font-size: 15px;
   line-height: 24px;
   font-weight: normal;
+  margin-bottom: 15px;
 }
 
 .leader__header {
@@ -60,6 +70,7 @@
 }
 
 .leader__header--text {
+  margin-top: 27px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -70,38 +81,56 @@
     text-align: center;
     width: 80px;
     line-height: 17px;
+    margin-top: 15px;
+    margin-right: 20px;
   }
 
   .leader__block {
     width: 292px;
-    margin-top: -150px;
+    margin-top: -120px;
   }
 
   .leader__header--text {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 45px;
   }
 
   .leader__description {
+    margin-top: -6px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .leader__description p {
+  .leader__legend {
     font-size: 17px;
     line-height: 30px;
+    width: 300px;
   }
 
   .leader__price {
     font-size: 20px;
     line-height: 24px;
   }
+
+  .leader__list {
+    margin-top: 30px;
+  }
+
+  .leader-image {
+    width: 330px;
+    height: 400px;
+  }
+
+  .leader__toggle {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .leader__wrapper {
-    padding-left: 175px;
+    padding-left: 230px;
   }
 
   .leader__header {
@@ -113,11 +142,28 @@
   .leader__header--remark {
     text-align: center;
     width: 85px;
-    margin: 0 40px;
+    margin: 80px 45px 0 35px;
   }
 
   .leader__header--text {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 125px;
+  }
+
+  .leader__description p {
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+
+  .leader__block {
+    width: 292px;
+    margin-top: -120px;
+    margin-bottom: 35px;
+  }
+
+  .leader-image {
+    width: 530px;
+    height: 455px;
   }
 }

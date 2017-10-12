@@ -1,8 +1,10 @@
-.catalog-process__video h3 {
-  padding-left: 60px;
+.catalog-proces__title {
+  padding-left: 90px;
+  margin-top: 10px;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+  margin-bottom: 25px;
 }
 
 .catalog-process__video {
@@ -12,12 +14,12 @@
 }
 
 .catalog-process {
-  border: 1px solid blue;
+  border: 1px solid red;
 }
 
 .catalog-process__order {
   border: 1px solid blue;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
 .catalog-list__cash {
@@ -28,22 +30,30 @@
   width: 180px;
 }
 
-.catalog-process__order p {
+.catalog-process__legend {
   margin-left: 30px;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
+  margin-top: 25px;
+  padding-right: 40px;
 }
 
 .catalog__toggle {
   display: block;
-  margin: 0 auto;
+  margin: 25px 30px 30px;
+  width: 190px;
   font-size: 17px;
   line-height: 16px;
+  padding: 17px 0 13px;
 }
 
 @media (min-width: @tablet-width) {
-  .catalog-process__video img {
+  .catalog-process {
+    margin-top: -10px;
+  }
+
+  .catalog-proces__image {
     width: 668px;
     height: 455px;
   }
@@ -52,18 +62,30 @@
     flex-direction: column-reverse;
   }
 
-  .catalog-process__video h3 {
+  .catalog-proces__title {
     font-size: 20px;
+    margin-top: 30px;
+    padding-left: 105px;
   }
 
-  .catalog-process__order p {
+  .catalog-process__legend {
     font-size: 15px;
     line-height: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+
+  .catalog__toggle {
+    margin: 35px 40px 30px;
+    width: 580px;
+    font-size: 17px;
+    line-height: 16px;
+    padding: 17px 0 13px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .catalog-process__video img {
+  .catalog-proces__image {
     width: 680px;
     height: 455px;
   }
@@ -73,7 +95,29 @@
     justify-content: flex-end;
   }
 
-  .catalog-process__video h3 {
+  .catalog-proces__title {
     width: 160px;
+    margin-top: 110px;
+    padding-left: 80px;
+  }
+
+  .catalog-process__order {
+    width: 320px;
+    display: block;
+    margin-top: -280px;
+    margin-left: 710px;
+    margin-bottom: 170px;
+  }
+
+  .catalog-process__legend {
+    margin-bottom: 50px;
+  }
+
+  .catalog__toggle {
+    margin: 25px 50px 30px;
+    width: 230px;
+    font-size: 17px;
+    line-height: 16px;
+    padding: 17px 0 13px;
   }
 }

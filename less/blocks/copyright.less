@@ -4,16 +4,17 @@
   background-position: center;
   background-repeat: no-repeat;
   .grid();
-  width: 35px;
+  width: 40px;
   height: 40px;
+  margin-left: 25px;
 }
 
 .copyright {
-  margin: 20px auto;
+  margin: 11px auto 29px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   font-size: 19px;
   line-height: 18px;
@@ -22,5 +23,12 @@
 @media (min-width: @tablet-width) {
   .copyright {
     width: 30%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    width: 31%;
+    justify-content: flex-end;
   }
 }

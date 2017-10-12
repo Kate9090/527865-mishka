@@ -3,9 +3,9 @@
   background-color: #fafafa;
 }
 
-.title-wrapper {
-  height: 180px;
+.title__wrapper {
   .container();
+  padding: 65px 0 80px;
 }
 
 @media (min-width: @tablet-width) {
@@ -13,14 +13,18 @@
     margin-top: -80px;
   }
 
-  .title-wrapper {
-    height: 255px;
-    margin-bottom: 80px;
+  .title__wrapper {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  .title-form {
+    margin-top: -70px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .title-wrapper {
+  .title__wrapper {
     margin-bottom: 130px;
   }
 }

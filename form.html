@@ -17,10 +17,10 @@
         <ul class="main-nav__list main-nav__list--closed site-list">
           <li class="main-nav__logo site-list__item site-list__item--active">
             <a class="site-list__logo" href="https://htmlacademy-adaptive.github.io/527865-mishka/4/">
-                <img class="site-list__item-image" src="img/mishka-logo.jpg" width="90" height="35" alt="«Мишка»">
+                <img class="site-list__item-image" src="img/mishka-logo.jpg" width="90" height="80" alt="«Мишка»">
               </a>
           </li>
-          <li  class="main-nav__toggle site-list__item"></li>
+          <li class="main-nav__toggle site-list__item"></li>
           <li class="site-list__item main-nav__mobile">
             <a href="catalog.html">Каталог товаров</a>
           </li>
@@ -49,10 +49,10 @@
 
   <main>
     <section class="title-page">
-    <div class="title-wrapper">
-      <h1 class="form-title">Вязание на заказ</h1>
-    </div>
-  </section>
+      <div class="page-wrapper title-page__wrapper">
+        <h1 class="form-title">Вязание на заказ</h1>
+      </div>
+    </section>
     <section class="form">
       <div class="form__wrapper">
         <p class="form__legend">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</p>
@@ -60,7 +60,9 @@
           <div class="form__list">
             <div class="form__item">
               <div class="form__item-wrapper">
-                <div class="form__border"><h3 class="form__name">Тип</h3></div>
+                <div class="form__border">
+                  <h3 class="form__name">Тип</h3>
+                </div>
                 <ul class="form__type-list">
                   <li>
                     <input class="form__radio" id="design" type="radio" name="" value="Аксессуар для интерьера">
@@ -75,29 +77,30 @@
             </div>
             <div class="form__item">
               <div class="form__item-wrapper">
-                <div class="form__border"><h3 class="form__name">Цвет</h3></div>
-                <ul class="form__color-list ">
-                  <li class="form__color-list--color">
+                <div class="form__border">
+                  <h3 class="form__name">Цвет</h3></div>
+                <ul class="form__color-list">
+                  <li class="form__color">
                     <input class="form__checkbox" id="white" type="checkbox" name="" value="Белый">
                     <label for="white">Белый</label>
                   </li>
-                  <li class="form__color-list--color">
+                  <li class="form__color">
                     <input class="form__checkbox" id="grey" type="checkbox" name="" value="Серый">
                     <label for="grey">Серый</label>
                   </li>
-                  <li class="form__color-list--color">
+                  <li class="form__color">
                     <input class="form__checkbox" id="tiffany" type="checkbox" name="" value="Тиффани">
                     <label for="tiffany">"Тиффани"</label>
                   </li>
-                  <li class="form__color-list--color">
+                  <li class="form__color">
                     <input class="form__checkbox" id="black" type="checkbox" name="" value="Черный">
                     <label for="black">Черный</label>
                   </li>
-                  <li class="form__color-list--color">
+                  <li class="form__color">
                     <input class="form__checkbox" id="pink" type="checkbox" name="" value="Розовый">
                     <label for="pink">Розовый</label>
                   </li>
-                  <li class="form__color-list--color">
+                  <li class="form__color">
                     <input class="form__checkbox" id="orange" type="checkbox" name="" value="Оранжевый">
                     <label for="orange">Оранжевый</label>
                   </li>
@@ -106,7 +109,8 @@
             </div>
             <div class="form__item">
               <div class="form__item-wrapper">
-                <div class="form__border"><h3 class="form__name">ФИО</h3></div>
+                <div class="form__border">
+                  <h3 class="form__name">ФИО</h3></div>
                 <ul class="form__fio-list">
                   <li class="form__flex">
                     <label for="name">Имя:</label>
@@ -125,7 +129,8 @@
             </div>
             <div class="form__item">
               <div class="form__item-wrapper">
-                <div class="form__border"><h3 class="form__name">ТЕЛ</h3></div>
+                <div class="form__border">
+                  <h3 class="form__name">ТЕЛ</h3></div>
                 <div class="form__data form__tel">
                   <input class="form__text" type="text" name="" value="+7 ХХХ ХХ ХХ*" placeholder="+7 ХХХ ХХ ХХ*" required>
                 </div>
@@ -133,7 +138,9 @@
             </div>
             <div class="form__item">
               <div class="form__item-wrapper">
-                <div class="form__border"><h3 class="form__name">E-MAIL</h3></div>
+                <div class="form__border">
+                  <h3 class="form__name">E-MAIL</h3>
+                </div>
                 <div class="form__data form__mail">
                   <input class="form__text" type="text" name="" value="Ваш e-mail*" placeholder="Ваш e-mail*" required>
                 </div>
@@ -141,15 +148,19 @@
             </div>
             <div class="form__item">
               <div class="form__item-wrapper">
-                <div class="form__border"><h3 class="form__name">ДОП</h3></div>
+                <div class="form__border">
+                  <h3 class="form__name">ДОП</h3>
+                </div>
                 <div class="form__data form__add">
-                  <textarea class="form__text" name="name" rows="3" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                  <textarea class="form__text form__text-textarea" name="name" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </div>
             </div>
           </div>
-          <input type="submit" class="button form__toggle" name="" value="ОТПРАВИТЬ ЗАКАЗ">
-          <small class="form__small">*Поля обязательны для заполнения</small>
+          <div class="form__item-wrapper form__toggle-flex">
+            <input type="submit" class="button form__toggle" name="" value="ОТПРАВИТЬ ЗАКАЗ">
+            <small class="form__small">*Поля обязательны для заполнения</small>
+          </div>
         </form>
       </div>
     </section>

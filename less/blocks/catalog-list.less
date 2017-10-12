@@ -1,39 +1,39 @@
-.catalog-list li {
-  list-style-type: none;
-}
-
 .catalog-list__item {
   display: flex;
   width: 100%;
-  border: 1px solid blue;
-  margin: 0 auto;
+  border: 1px solid lightgrey;
+  margin: 0 auto 30px;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.catalog-list-description {
+.catalog-list__description {
   width: 210px;
   text-align: left;
   margin-left: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .catalog-list__name {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .catalog-list__caracteristics {
   font-size: 13px;
   line-height: 30px;
   font-weight: normal;
+  margin-top: -10px;
+  margin-bottom: 19px;
 }
 
 .catalog-list__cash {
   font-size: 13px;
   line-height: 30px;
   font-weight: bold;
+  padding-top: 2px;
 }
 
 .catalog-list__picture {
@@ -44,24 +44,26 @@
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid lightblue;
   padding: 0;
 }
 
 @media (min-width: @tablet-width) {
-  .title-wrapper {
-    margin-bottom: 130px;
-  }
-  // .catalog-list__item {
-  //   width: 668px;
-  // }
   .catalog-list__picture {
     width: 334px;
     height: 335px;
-    margin-bottom: 55px;
+    margin-bottom: 0;
   }
 
-  .catalog-list-description {
+  .catalog-list {
+    margin: 10px 0 0;
+    padding: 0 auto;
+  }
+
+  .catalog-list__item {
+    margin: 10px 0 13px;
+  }
+
+  .catalog-list__description {
     width: 270px;
     text-align: left;
     margin-left: 30px;
@@ -70,8 +72,7 @@
 
   .catalog-list__name {
     font-size: 20px;
-    line-height: 24px;
-    font-weight: bold;
+    margin-top: 25px;
   }
 
   .catalog-list__caracteristics {
@@ -82,6 +83,7 @@
     font-size: 17px;
     line-height: 24px;
     font-weight: bold;
+    margin-top: 150px;
   }
 }
 
@@ -92,10 +94,12 @@
 
   .catalog-list__item {
     width: 315px;
+    margin-top: 0;
   }
 
   .catalog-list {
     justify-content: space-between;
+    margin: 0;
   }
 
   .catalog-list__picture {
@@ -103,11 +107,19 @@
     height: 460px;
   }
 
-  .catalog-list-description {
+  .catalog-list__description {
     width: 255px;
     text-align: left;
-    margin-left: 30px;
-    margin-bottom: 80px;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+
+  .catalog-list__cash {
+    margin-top: 10px;
+  }
+
+  .catalog-list__name {
+    margin-top: 0;
   }
 }
