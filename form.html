@@ -17,7 +17,11 @@
         <ul class="main-nav__list main-nav__list--closed site-list">
           <li class="main-nav__logo site-list__item site-list__item--active">
             <a class="site-list__logo" href="https://htmlacademy-adaptive.github.io/527865-mishka/4/">
-                <img class="site-list__item-image" src="img/mishka-logo.jpg" width="90" height="80" alt="«Мишка»">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="site-list__item-image" src="img/logo-mobile.svg" width="90" height="80" alt="«Мишка»">
+              </picture>
               </a>
           </li>
           <li class="main-nav__toggle site-list__item"></li>
@@ -169,7 +173,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper page-footer__flex">
       <a class="page-footer__logo" href="https://htmlacademy-adaptive.github.io/527865-mishka/4/">
-          <img class="page-footer__logo-image" src="img/mishka-logo.jpg" width="90" height="35" alt="«Мишка»">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="90" height="50" alt="«Мишка»">
         </a>
       <div class="page-footer__social social">
         <ul class="social__list">
