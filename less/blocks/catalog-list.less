@@ -46,7 +46,6 @@
   flex-wrap: wrap;
   padding: 0;
 }
-
 @media (min-width: @tablet-width) {
   .catalog-list__picture {
     width: 334px;
@@ -85,7 +84,6 @@
     margin-top: 150px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .title-wrapper {
     margin-bottom: 130px;
@@ -94,6 +92,10 @@
   .catalog-list__item {
     width: 315px;
     margin-top: 0;
+
+    &--toybasket .catalog-list__picture {
+      position: relative;
+    }
   }
 
   .catalog-list {
@@ -104,10 +106,6 @@
   .catalog-list__picture {
     width: 315px;
     height: 460px;
-  }
-
-  .catalog-list__item--toybasket .catalog-list__picture {
-    position: relative;
   }
 
   .catalog-list__description {

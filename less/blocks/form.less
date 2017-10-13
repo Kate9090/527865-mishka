@@ -229,6 +229,14 @@ input[placeholder] {
     padding-left: 80px;
   }
 
+  input[type="radio"]:checked + label::after {
+    top: 17px;
+    left: 17px;
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
   input[type="checkbox"] + label {
     padding-left: 85px;
     margin-top: 25px;
@@ -237,6 +245,11 @@ input[placeholder] {
   }
 
   input[type="checkbox"] + label::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  input[type="checkbox"]:checked + label::after {
     width: 50px;
     height: 50px;
   }
@@ -358,6 +371,11 @@ input[placeholder] {
     display: block;
     font-size: 17px;
   }
+
+  div.form__toggle-flex {
+    margin-top: 40px;
+    margin-bottom: 85px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -374,7 +392,7 @@ input[placeholder] {
   }
 
   .form__legend {
-    margin-top: 125px;
+    margin-top: 0px;
     padding-left: 225px;
     padding-right: 225px;
   }
