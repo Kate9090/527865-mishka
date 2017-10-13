@@ -1,11 +1,9 @@
 .title-page {
-  .grid;
-  background-color: #fafafa;
+  background-color: @light-grey;
 }
 
 .title__wrapper {
   .container();
-  padding: 65px 0 80px;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,7 +22,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .title__wrapper {
+  .title-page {
     margin-bottom: 130px;
+  }
+
+  .title__wrapper {
+    margin-bottom: 0;
   }
 }

@@ -7,17 +7,15 @@
 }
 
 .leader-image {
-  background-color: #fafafa;
-  margin: 30px 0 15px;
-  .grid();
+  background-color: @light-grey;
+  margin: 30px 0 20px;
 }
 
 .leader__block {
   display: block;
-  .grid();
 }
 
-.leader__header--remark {
+.leader__remark {
   color: @green;
   text-transform: uppercase;
   margin-top: -14px;
@@ -27,7 +25,7 @@
 }
 
 .leader__item {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid @light-grey;
   font-size: 15px;
   line-height: 20px;
   padding: 9px 0 8px;
@@ -35,7 +33,7 @@
 
 .leader__toggle {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   font-size: 17px;
   line-height: 20px;
   padding: 12px 0 18px;
@@ -45,6 +43,7 @@
   text-align: center;
   font-size: 17px;
   line-height: 24px;
+  font-weight: bold;
 }
 
 .leader__description {
@@ -69,7 +68,7 @@
   align-items: center;
 }
 
-.leader__header--text {
+.leader__text {
   margin-top: 27px;
   font-size: 25px;
   line-height: 30px;
@@ -77,7 +76,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .leader__header--remark {
+  .leader__remark {
     text-align: center;
     width: 80px;
     line-height: 17px;
@@ -90,7 +89,7 @@
     margin-top: -120px;
   }
 
-  .leader__header--text {
+  .leader__text {
     font-size: 43px;
     line-height: 50px;
     margin-top: 45px;
@@ -139,13 +138,13 @@
     margin-left: -175px;
   }
 
-  .leader__header--remark {
+  .leader__remark {
     text-align: center;
     width: 85px;
     margin: 80px 45px 0 35px;
   }
 
-  .leader__header--text {
+  .leader__text {
     font-size: 53px;
     line-height: 57px;
     margin-top: 125px;
@@ -163,7 +162,10 @@
   }
 
   .leader-image {
+    margin-top: -150px;
+    z-index: -5;
     width: 530px;
     height: 455px;
+    margin-bottom: 150px;
   }
 }

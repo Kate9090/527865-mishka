@@ -11,7 +11,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  margin-top: 33px;
+  margin-top: 35px;
 }
 
 .contacts__text-button {
@@ -65,8 +65,8 @@
   padding-right: 10px;
 }
 
-.contacts__item .contacts__mail-name,
-.contacts__item .contacts__adress-name {
+.contacts__item .contacts__adress-name,
+.contacts__item .contacts__mail-name {
   width: 150px;
 }
 
@@ -75,11 +75,15 @@
   width: 320px;
   height: 460px;
   margin: 0 auto;
-  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
 }
 
 .contacts__toggle {
-  margin: 40px auto;
+  margin: 45px auto;
   font-size: 18px;
   line-height: 20px;
   padding: 12px 0 18px;
@@ -108,8 +112,8 @@
     margin: 55px auto 90px;
   }
 
-  .contacts__item .contacts__mail-name,
-  .contacts__item .contacts__adress-name {
+  .contacts__item .contacts__adress-name,
+  .contacts__item .contacts__mail-name {
     width: 250px;
   }
 
@@ -126,6 +130,11 @@
     background-image: url("../img/map-tablet@1x.jpg");
     width: 768px;
     height: 460px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/map-tablet@2x.jpg");
+      background-size: 1534px auto;
+    }
   }
 
   .contacts__adress {
@@ -196,6 +205,11 @@
     margin-top: 75px;
     margin-left: -55px;
     margin-bottom: 145px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/map-desktop@2x.jpg");
+      background-size: 2300px auto;
+    }
   }
 
   .contacts__mail {
