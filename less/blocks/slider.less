@@ -1,19 +1,13 @@
 .slider {
   display: block;
 
-  &--prev {
-    background-image: url("../img/icon-left-arrow.svg");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+  &__arrows svg{
+    margin: 12px 35px;
   }
+}
 
-  &--next {
-    background-image: url("../img/icon-right-arrow.svg");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+@media (min-width: @tablet-width) {
+  .slider__arrows svg{
+    margin: 12px 15px;
   }
 }

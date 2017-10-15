@@ -5,10 +5,10 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  margin-top: 30px;
 }
 
 .advantages-list__item {
-  padding-top: 67px;
   padding-bottom: 16px;
   padding-right: 3px;
   width: 300px;
@@ -16,45 +16,26 @@
   line-height: 20px;
   font-weight: bold;
   color: @button-color;
-
-  &--material {
-    background-image: url("../img/icon-feature-flower.svg");
-    background-position: 5px 10px;
-    background-repeat: no-repeat;
-    // fill: #ffb600;
-  }
-
-  &--style {
-    background-image: url("../img/icon-feature-money.svg");
-    background-position: 0 10px;
-    background-repeat: no-repeat;
-  }
-
-  &--likes {
-    background-image: url("../img/icon-feature-heart.svg");
-    background-position: 8px 15px;
-    background-repeat: no-repeat;
-  }
-
-  &--handmade {
-    background-image: url("../img/icon-feature-ball.svg");
-    background-position: 0 10px;
-    background-repeat: no-repeat;
-  }
-
-  &--support {
-    background-image: url("../img/icon-feature-rocket.svg");
-    background-position: -5px 15px;
-    background-repeat: no-repeat;
-    z-index: 100;
-  }
-
-  &--present {
-    background-image: url("../img/icon-feature-gift.svg");
-    background-position: 0 15px;
-    background-repeat: no-repeat;
-  }
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
+
+.advantages-list__item svg{
+  fill:@green;
+}
+
+.advantages-list__item a{
+  display: block;
+  margin: 20px 0;
+  color: #000000;
+}
+.advantages-list__item:nth-child(4) a{
+  display: block;
+  margin: 15px 0;
+  color: #000000;
+}
+
 
 @media (min-width: @tablet-width) {
   .advantages-list {

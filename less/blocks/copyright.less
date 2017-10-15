@@ -1,11 +1,10 @@
 .copyright__link {
   display: block;
-  background-image: url("../img/htmlacademy.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
   margin-left: 25px;
+}
+
+.copyright__link svg {
+  fill: @green;
 }
 
 .copyright {
@@ -21,13 +20,14 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
-    width: 30%;
-  }
+    width: 27%;
+    // align-items: flex-end;
+}
 }
 
 @media (min-width: @desktop-width) {
   .copyright {
-    width: 31%;
+    width: 27%;
     justify-content: flex-end;
   }
 }

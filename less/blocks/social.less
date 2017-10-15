@@ -1,34 +1,30 @@
 .social__link {
   &--instagram {
     display: block;
-    background-image: url("../img/icon-insta.svg");
-    background-position: right top;
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
   }
 
   &--facebook {
     display: block;
-    background-image: url("../img/icon-fb.svg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
   }
 
   &--twitter {
     display: block;
-    background-image: url("../img/icon-twitter.svg");
-    background-position: left top;
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .social {
     flex-grow: 1;
+  }
+
+  .social__link {
+    &--instagram {
+    }
+
+    &--facebook {
+    }
+
+    &--twitter {
+    }
   }
 }
