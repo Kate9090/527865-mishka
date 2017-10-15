@@ -16,6 +16,21 @@
   display: block;
   flex-grow: 1;
   padding: 0;
+
+  &--mobile {
+    display: block;
+    margin: 15px auto 10px;
+    width: 86px;
+    height: 35px;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
@@ -27,7 +42,7 @@
   fill: black;
   background-color: #ffffff;
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 0;
   z-index: 2;
   display: block;
@@ -108,5 +123,48 @@
     justify-content: space-between;
     font-weight: bold;
     color: #000000;
+  }
+
+  .main-nav__logo {
+
+    &--tablet {
+      display: block;
+      width: 112px;
+      height: 46px;
+    }
+
+    &--mobile {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    &--desktop {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+    .main-nav__logo {
+
+    &--desktop {
+
+      display: block;
+      width: 148px;
+      height: 73px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+      width: 0;
+      height: 0;
+    }
   }
 }
