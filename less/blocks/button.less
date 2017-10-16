@@ -1,5 +1,5 @@
 .button {
-  background-color: #f1f1f1;
+  background-color: @light-grey;
   width: 260px;
   border: 2px solid @button-color;
   display: block;
@@ -10,4 +10,14 @@
   font-weight: bold;
   vertical-align: middle;
   text-transform: uppercase;
+
+
+&:hover {
+  color: #ffffff;
+  background-color: @button-color;
+}
+
+&:active {
+  color: lighten(@button-color, 30%);
+}
 }

@@ -80,6 +80,10 @@ input[type="radio"] + label::before {
   height: 39px;
   border: 2px solid #000000;
   border-radius: 50%;
+
+  &:hover{
+  border: 2px solid @green;
+  }
 }
 
 input[type="radio"]:checked + label::after {
@@ -116,9 +120,13 @@ input[type="checkbox"] + label::before {
   top: 0;
   left: 0;
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 39px;
+  height: 39px;
   border: 2px solid #000000;
+
+  &:hover{
+  border: 2px solid @green;
+  }
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -129,15 +137,28 @@ input[type="checkbox"]:checked + label::after {
   display: block;
   width: 40px;
   height: 40px;
-  border: 1px solid #000000;
+  border: 2px solid @light-grey;
   background-image: url("../img/icon-tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-
+input[placeholder] {
+  color: grey;
+  opacity: 0.4;
+}
 input[type="text"] {
   border: 0;
   border-bottom: 2px solid @button-color;
+
+  &:hover{
+  border-bottom:  2px solid @green;
+  }
+  &:active{
+  color: #000000;
+  opacity: 1;
+  border: 0;
+  border-bottom:  2px solid @green;
+  }
 }
 // input[type="text"]:checked {
 //   color: black;
@@ -148,10 +169,7 @@ input[type="text"] {
 // }
 // }
 
-input[placeholder] {
-  color: grey;
-  opacity: 0.4;
-}
+
 
 .form__flex {
   display: flex;
@@ -202,6 +220,16 @@ input[placeholder] {
 
 .form__text-textarea {
   height: 140px;
+
+  &:hover{
+  border:  2px solid @green;
+  }
+  &:active{
+  color: #000000;
+  opacity: 1;
+  border: 0;
+  border:  2px solid @green;
+  }
 }
 
 .form__toggle-flex {

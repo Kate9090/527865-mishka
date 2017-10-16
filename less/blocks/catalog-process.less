@@ -39,11 +39,22 @@
 
 .catalog-process__play svg {
   z-index: 100;
-  opacity: 0.5;
+  opacity: 0.7;
   width: 100px;
   height: 76px;
   margin-left: -180px;
   display: block;
+
+  &:hover {
+    width: 120px;
+    height: 100px;
+    margin-left: -190px;
+  }
+  &:active {
+    opacity: 0.4;
+    width: 80px;
+    height: 60px;
+  }
 }
 
 .catalog-list__cash {
@@ -78,7 +89,18 @@
   }
 
   .catalog-process__play svg {
+    opacity: 0.9;
     margin-left: -380px;
+    &:hover {
+      width: 120px;
+      height: 100px;
+      margin-left: -390px;
+    }
+    &:active {
+      opacity: 0.4;
+      width: 80px;
+      height: 60px;
+    }
   }
 
   .catalog-proces__image {

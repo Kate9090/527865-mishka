@@ -1,13 +1,24 @@
 .slider {
   display: block;
 
-  &__arrows svg{
+  &__arrows svg {
     margin: 12px 35px;
   }
 }
+  .slider__arrows--prev:hover svg,
+   .slider__arrows--next:hover svg{
+    fill: @button-color;
+    opacity: 0.9;
+  }
+
+  .slider__arrows--prev:active svg,
+   .slider__arrows--next:active svg{
+    fill: @button-color;
+    opacity: 0.3;
+  }
 
 @media (min-width: @tablet-width) {
-  .slider__arrows svg{
+  .slider__arrows svg {
     margin: 12px 15px;
   }
 }
