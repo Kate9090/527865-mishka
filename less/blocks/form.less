@@ -229,7 +229,7 @@ input[placeholder] {
 .form__tel svg{
   opacity: 0.4;
 position: absolute;
-margin-right: 20px;
+margin-left: 220px;
 }
 .form__mail {
   display: flex;
@@ -240,7 +240,12 @@ margin-right: 20px;
 .form__mail svg{
   opacity: 0.4;
 position: absolute;
-margin-right: 10px;
+margin-left: 220px;
+}
+
+.form__tel input,
+.form__mail input {
+  background-color: @light-grey;
 }
 
 .form__fio-list label {
@@ -436,11 +441,13 @@ margin-right: 10px;
   .form__tel svg{
   width:30px;
   height: 30px;
+  margin-left: 460px;
   }
 
   .form__mail svg{
   width:30px;
   height: 30px;
+  margin-left: 460px;
   }
 
   div.form__toggle-flex {
@@ -452,6 +459,14 @@ margin-right: 10px;
 @media (min-width: @desktop-width) {
   .form__color {
     width: 33%;
+  }
+
+  .form__tel svg{
+  margin-left: 660px;
+  }
+
+  .form__mail svg{
+  margin-left: 660px;
   }
 
   .form__color-list {
