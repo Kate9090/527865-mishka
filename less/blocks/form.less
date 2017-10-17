@@ -123,11 +123,16 @@ input[type="checkbox"] + label::before {
   width: 39px;
   height: 39px;
   border: 2px solid #000000;
-
-  &:hover{
-  border: 2px solid @green;
-  }
+  //
+  // &:hover{
+  // border: 2px solid @green;
+  // }
 }
+//
+// label:hover::before {
+//   border: 2px solid @green;
+//   }
+
 
 input[type="checkbox"]:checked + label::after {
   content: "";
@@ -137,7 +142,6 @@ input[type="checkbox"]:checked + label::after {
   display: block;
   width: 40px;
   height: 40px;
-  border: 2px solid @light-grey;
   background-image: url("../img/icon-tick.svg");
   background-position: center;
   background-repeat: no-repeat;

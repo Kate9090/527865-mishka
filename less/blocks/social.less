@@ -1,15 +1,16 @@
-.social__link {
-  &--instagram {
-    display: block;
-  }
+.social__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 22.5px auto;
+}
 
-  &--facebook {
-    display: block;
-  }
-
-  &--twitter {
-    display: block;
-  }
+.social__item {
+  width: 35px;
+  height: 35px;
+  margin: 0 15px;
 }
 
 @media (min-width: @tablet-width) {

@@ -1,10 +1,19 @@
 .catalog-list__item {
   display: flex;
   width: 100%;
-  border: 1px solid lightgrey;
+  border: 1px solid @light-grey;
   margin: 0 auto 35px;
   flex-wrap: wrap;
   flex-direction: row;
+
+  &:hover{
+  box-shadow: 0 3px 10px 3px @light-grey;
+}
+
+&:active{
+box-shadow: 0 3px 3px 3px @light-grey;
+}
+
 }
 
 .catalog-list__description {
