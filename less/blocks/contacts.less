@@ -57,15 +57,17 @@
 
 .contacts__mail-name {
   color: #000000;
-  border-bottom: 1px solid @green;
+  border-bottom: 1px solid #62d1ba;
 }
 
 .contacts__mail-name:hover  {
-  color: @green;
+  color: #77d2c4;
+  border-bottom: 1px solid #46c1ae;
 }
 
 .contacts__mail-name:active  {
-  opacity: 0.3;
+  color: #c7ece7;
+  border-bottom: 1px solid #f0faf8;
 }
 
 
@@ -91,16 +93,36 @@
   width: 150px;
 }
 
+.contacts__flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .contacts__map {
   background-image: url("../img/map-mobile@1x.jpg");
   width: 320px;
   height: 460px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
     background-size: 640px auto;
   }
+}
+
+.contacts__map::before {
+content: "";
+position: absolute;
+top: 130px;
+left: 150px;
+width: 66px;
+height: 101px;
+background-image: url("../img/icon-map-pin.svg");
+background-repeat: no-repeat;
+// z-index: 1000;
 }
 
 .contacts__toggle {
@@ -110,19 +132,16 @@
   padding: 12px 0 18px;
 }
 
-.contacts__flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 @media (min-width: @tablet-width) {
   .contacts__item {
     flex-basis: 50%;
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 40px;
+  }
+
+  .contacts__map::before {
+  left: 380px;
   }
 
   .contacts__text-flex {
@@ -185,6 +204,10 @@
   .contacts__wrapper {
     width: @desktop-width;
     padding-left: 125px;
+  }
+
+  .contacts__map::before {
+  left: 260px;
   }
 
   .contacts__title {
