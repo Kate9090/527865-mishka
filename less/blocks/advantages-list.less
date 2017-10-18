@@ -19,23 +19,54 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-}
 
-.advantages-list__item svg {
+& svg {
   fill: @green;
 }
 
-.advantages-list__item a {
+& a {
   display: block;
   margin: 20px 0;
   color: #000000;
 }
 
-.advantages-list__item:nth-child(4) a {
+&:nth-child(4) a {
   display: block;
   margin: 15px 0;
   color: #000000;
 }
+
+&--material svg{
+  margin-left: 8px;
+}
+
+&--style svg{
+margin-left: -8px;
+margin-top: -8px;
+margin-bottom: 8px;
+}
+
+&--likes svg{
+margin-left: 8px;
+margin-top: -3px;
+}
+
+&--handmade svg{
+margin-left: 2px;
+margin-top: -2px;
+}
+
+&--support svg{
+margin-left: -6px;
+margin-top: 1px;
+margin-bottom: 7px;
+}
+
+&--present svg{
+margin-top: -8px;
+}
+}
+
 
 @media (min-width: @tablet-width) {
   .advantages-list {
@@ -58,6 +89,10 @@
       order: 3;
     }
 
+    &--style svg{
+      margin-top: -15px;
+    }
+
     &--likes {
       order: 5;
     }
@@ -69,6 +104,9 @@
     &--support {
       order: 4;
     }
+    &--support svg{
+      margin-top: -10px;
+    }
 
     &--present {
       order: 6;
@@ -79,7 +117,7 @@
 @media (min-width: @desktop-width) {
   .advantages-list__item {
     font-size: 20px;
-    padding-right: 100px;
+    padding-right: 0px;
   }
 
   .advantages-list {

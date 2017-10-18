@@ -56,6 +56,7 @@
 }
 
 .contacts__mail-name {
+  padding-left: 13px;
   color: #000000;
   border-bottom: 1px solid #62d1ba;
 }
@@ -81,16 +82,16 @@
 
 .contacts__adress-name {
   margin-top: 0;
+  padding-left: 30px;
 }
 
 .contacts__span {
   width: 60px;
-  padding-right: 10px;
 }
 
 .contacts__item .contacts__adress-name,
 .contacts__item .contacts__mail-name {
-  width: 150px;
+  width: 180px;
 }
 
 .contacts__flex {
@@ -106,6 +107,7 @@
   height: 460px;
   margin: 0 auto;
   position: relative;
+  margin-top: 5px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
@@ -126,7 +128,7 @@ background-repeat: no-repeat;
 }
 
 .contacts__toggle {
-  margin: 45px auto;
+  margin: 35px auto 46px;
   font-size: 18px;
   line-height: 20px;
   padding: 12px 0 18px;
@@ -161,17 +163,17 @@ background-repeat: no-repeat;
   }
 
   .contacts__toggle {
-    margin: 55px auto 90px;
+    margin: 55px auto;
     width: 230px;
   }
 
   .contacts__item .contacts__adress-name,
   .contacts__item .contacts__mail-name {
-    width: 250px;
+    width: 260px;
   }
 
   .contacts__span {
-    width: 70px;
+    width: 65px;
     padding-right: 10px;
   }
 
@@ -183,6 +185,7 @@ background-repeat: no-repeat;
     background-image: url("../img/map-tablet@1x.jpg");
     width: 768px;
     height: 460px;
+    margin-top: -1px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("/img/map-tablet@2x.jpg");
@@ -204,6 +207,11 @@ background-repeat: no-repeat;
   .contacts__wrapper {
     width: @desktop-width;
     padding-left: 125px;
+  }
+
+  .contacts__span {
+    width: 75px;
+    padding-right: 5px;
   }
 
   .contacts__map::before {
@@ -269,7 +277,7 @@ background-repeat: no-repeat;
     height: 455px;
     margin-top: 65px;
     margin-left: -55px;
-    margin-bottom: 145px;
+    margin-bottom: 110px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("/img/map-desktop@2x.jpg");
