@@ -301,8 +301,8 @@
           </div>
           <div class="leader-image">
             <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
@@ -312,14 +312,11 @@
           </div>
         </div>
         <div class="leader__block">
-          <div class="popup">
-            <div class="popup_bg">
-            </div>
-          </div>
           <div class="leader__price">
             Цена:990 руб.
           </div>
-          <a class="button leader__toggle"  href="javascript:PopUpShow()">Заказать</a>
+          <a class="button leader__toggle popup-open-link catalog__add-link">Заказать</a>
+          <!-- <a class="button leader__toggle"  href="javascript:PopUpShow()">Заказать</a> -->
         </div>
       </div>
       <svg class="leader__zigzag">
@@ -477,6 +474,11 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup">
+    <div class="popup_bg">
+    </div>
+  </div>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="popup.js"></script>
