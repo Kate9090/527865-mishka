@@ -1,16 +1,14 @@
-$(document).ready(FUNCTION() { // Ждём загрузки страницы
-
-$(".popup_bg").click(FUNCTION(){    // Событие клика на затемненный фон
-$(".popup").fadeOut(800);    // Медленно убираем всплывающее окно
+$(document).ready(function(){
+    PopUpHide();
 });
-
-});
-
-FUNCTION showPopup() {
-
-$(".popup").fadeIn(800); // Медленно выводим изображение
-
+function PopUpShow(){
+    $("#popup1").show();
 }
+function PopUpHide(){
+    $("#popup1").hide();
+}
+
+
 // var popupOpenLink = document.querySelector(".popup-open-link");
 // var popup = document.querySelector(".popup");
 // var popupOverlay = document.querySelector(".popup_bg");
