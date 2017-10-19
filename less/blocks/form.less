@@ -121,14 +121,14 @@ input[type="checkbox"] + label::before {
   border: 2px solid #000000;
 }
 //
+
 input[type="checkbox"] + label:hover::before {
   border: 2px solid @green;
-  }
+}
 
-  input[type="radio"] + label:hover::before {
-    border: 2px solid @green;
-    }
-
+input[type="radio"] + label:hover::before {
+  border: 2px solid @green;
+}
 
 input[type="checkbox"]:checked + label::after {
   content: "";
@@ -142,18 +142,19 @@ input[type="checkbox"]:checked + label::after {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 input[placeholder] {
   color: #cccccc;
 }
+
 input[type="text"] {
   border: 0;
   border-bottom: 2px solid #000000;
   outline: none;
 
-  &:hover{
-  border-bottom:  2px solid #62d1ba;
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
   }
-
   // &:checked{
   // color: #000000;
   // opacity: 1;
@@ -161,12 +162,13 @@ input[type="text"] {
   // border-bottom:  2px solid @green;
   // }
 }
-input[type="text"]:checked{
+
+input[type="text"]:checked {
   content: "";
-color: #000000;
-opacity: 1;
-border: 0;
-border-bottom: 2px solid #62d1ba;
+  color: #000000;
+  opacity: 1;
+  border: 0;
+  border-bottom: 2px solid #62d1ba;
 }
 // input.form__text:active
 // input[type="text"]:checked {
@@ -177,8 +179,6 @@ border-bottom: 2px solid #62d1ba;
 //   display: none;
 // }
 // }
-
-
 
 .form__flex {
   display: flex;
@@ -230,16 +230,17 @@ border-bottom: 2px solid #62d1ba;
 .form__text-textarea {
   height: 140px;
   outline: none;
-  border:  2px solid #000000;
+  border: 2px solid #000000;
 
-  &:hover{
-  border:  2px solid #62d1ba;
+  &:hover {
+    border: 2px solid #62d1ba;
   }
-  &:active{
-  color: #000000;
-  opacity: 1;
-  border: 0;
-  border:  2px solid #62d1ba;
+
+  &:active {
+    color: #000000;
+    opacity: 1;
+    border: 0;
+    border: 2px solid #62d1ba;
   }
 }
 
@@ -273,17 +274,6 @@ border-bottom: 2px solid #62d1ba;
   right: 10px;
   bottom: 10px;
 }
-
-// .form__tel::before {
-//   content: "";
-// position: absolute;
-// top: 0;
-// right: 0;
-// width: 25px;
-// height: 24px;
-// background-image: url("../img/icon-phone.svg");
-// background-repeat: no-repeat;
-// }
 
 .form__mail {
   display: flex;
@@ -481,7 +471,7 @@ border-bottom: 2px solid #62d1ba;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     .grid();
   }
 
@@ -521,7 +511,6 @@ border-bottom: 2px solid #62d1ba;
   .form__tel svg {
     margin-left: 660px;
   }
-
   // .form__mail svg {
   //   margin-left: 660px;
   // }
@@ -529,7 +518,6 @@ border-bottom: 2px solid #62d1ba;
   // .form__color-list {
   //   margin-right: 70px;
   // }
-
   .form__color:nth-child(2n) {
     padding-left: 0;
   }
@@ -572,10 +560,10 @@ border-bottom: 2px solid #62d1ba;
     margin-top: -2px;
   }
 
-div.form__toggle-flex {
-  margin-top: -5px;
-  margin-bottom: 50px;
-}
+  div.form__toggle-flex {
+    margin-top: -5px;
+    margin-bottom: 50px;
+  }
   // div.form__toggle-flex {
   //   margin-top: 37px;
   //   margin-bottom: 45px;

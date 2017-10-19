@@ -20,53 +20,52 @@
   justify-content: space-around;
   flex-direction: column;
 
-& svg {
-  fill: @green;
-}
+  & svg {
+    fill: @green;
+  }
 
-& a {
-  display: block;
-  margin: 20px 0;
-  color: #000000;
-}
+  & a {
+    display: block;
+    margin: 20px 0;
+    color: #000000;
+  }
 
-&:nth-child(4) a {
-  display: block;
-  margin: 15px 0;
-  color: #000000;
-}
+  &:nth-child(4) a {
+    display: block;
+    margin: 15px 0;
+    color: #000000;
+  }
 
-&--material svg{
-  margin-left: 8px;
-}
+  &--material svg {
+    margin-left: 8px;
+  }
 
-&--style svg{
-margin-left: -8px;
-margin-top: -8px;
-margin-bottom: 8px;
-}
+  &--style svg {
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
 
-&--likes svg{
-margin-left: 8px;
-margin-top: -3px;
-}
+  &--likes svg {
+    margin-left: 8px;
+    margin-top: -3px;
+  }
 
-&--handmade svg{
-margin-left: 2px;
-margin-top: -2px;
-}
+  &--handmade svg {
+    margin-left: 2px;
+    margin-top: -2px;
+  }
 
-&--support svg{
-margin-left: -6px;
-margin-top: 1px;
-margin-bottom: 7px;
-}
+  &--support svg {
+    margin-left: -6px;
+    margin-top: 1px;
+    margin-bottom: 7px;
+  }
 
-&--present svg{
-margin-top: -8px;
+  &--present svg {
+    margin-top: -8px;
+  }
 }
-}
-
 
 @media (min-width: @tablet-width) {
   .advantages-list {
@@ -89,7 +88,7 @@ margin-top: -8px;
       order: 3;
     }
 
-    &--style svg{
+    &--style svg {
       margin-top: -10px;
     }
 
@@ -104,7 +103,8 @@ margin-top: -8px;
     &--support {
       order: 4;
     }
-    &--support svg{
+
+    &--support svg {
       margin-top: -5px;
     }
 
@@ -117,7 +117,7 @@ margin-top: -8px;
 @media (min-width: @desktop-width) {
   .advantages-list__item {
     font-size: 20px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .advantages-list {
