@@ -147,6 +147,11 @@ input[placeholder] {
   color: #cccccc;
 }
 
+input::-webkit-input-placeholder {
+  color: #cccccc;
+  color: transparent;
+}
+
 input[type="text"] {
   border: 0;
   border-bottom: 2px solid #000000;
@@ -155,30 +160,14 @@ input[type="text"] {
   &:hover {
     border-bottom: 2px solid #62d1ba;
   }
-  // &:checked{
-  // color: #000000;
-  // opacity: 1;
-  // border: 0;
-  // border-bottom:  2px solid @green;
-  // }
 }
 
 input[type="text"]:checked {
-  content: "";
   color: #000000;
   opacity: 1;
   border: 0;
   border-bottom: 2px solid #62d1ba;
 }
-// input.form__text:active
-// input[type="text"]:checked {
-//   color: black;
-//   font-size: 17px;
-//
-//     input[placeholder] {
-//   display: none;
-// }
-// }
 
 .form__flex {
   display: flex;
@@ -243,8 +232,8 @@ input[type="text"]:checked {
   }
 }
 
-  .form__text-textarea[placeholder] {
-    padding: 10px 20px;
+.form__text-textarea[placeholder] {
+  padding: 10px 20px;
 }
 
 .form__toggle-flex {
@@ -301,7 +290,6 @@ input[type="text"]:checked {
 .form__fio-list label {
   font-weight: bold;
 }
-
 @media (min-width: @tablet-width) {
   .form__item:nth-child(2),
   .form__item:nth-child(4),
@@ -505,7 +493,6 @@ input[type="text"]:checked {
     margin-bottom: 45px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .form__color {
     width: 30%;
