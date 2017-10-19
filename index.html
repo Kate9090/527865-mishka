@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <script>
+  <script type="text/javascript">
     document.createElement("picture");
   </script>
-  <script src="picturefill.js" async></script>
+  <script type="text/javascript" src="picturefill.js" async></script>
 </head>
 
 <body>
@@ -475,13 +475,32 @@
     </div>
   </footer>
 
-  <div class="popup">
-    <div class="popup_bg">
+  <section class="popup">
+    <div class="popup__bg"></div>
+    <div class="popup__container">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <h3 class="popup__heading">Добавить в корзину</h3>
+        <h3 class="popup__text">Выберите размер:</h3>
+        <div class="popup__size-group">
+          <input class="popup__input" type="radio" value="size" name="size" id="size-S">
+          <label for="size-S"><span class="popup__size">S</span></label>
+
+          <input class="popup__input" type="radio" value="size" name="size" id="size-M">
+          <label for="size-M"><span class="popup__size">M</span></label>
+
+          <input class="popup__input" type="radio" value="size" name="size" id="size-L">
+          <label for="size-L"><span class="popup__size">L</span></label>
+        </div>
+
+        <!-- <label for="size-L"><span class="popup__size">L</span></label> -->
+
+        <button type="submit" class="popup__button">Добавить</button>
+      </form>
     </div>
-  </div>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="popup.js"></script>
+  </section>
+  <script type="text/javascript" src="popup.js"></script>
+
+
 </body>
 
 </html>

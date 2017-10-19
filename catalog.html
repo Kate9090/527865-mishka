@@ -341,6 +341,32 @@
       </div>
     </div>
   </footer>
+
+  <section class="popup">
+  <div class="popup__bg"></div>
+  <div class="popup__container">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <h3 class="popup__heading">Добавить в корзину</h3>
+      <h3 class="popup__text">Выберите размер:</h3>
+      <div class="popup__size-group">
+        <input class="popup__input" type="radio" value="size" name="size" id="size-S">
+        <label class="popup__label" for="size-S"><span class="popup__size">S</span></label>
+
+        <input class="popup__input" type="radio" value="size" name="size" id="size-M">
+        <label class="popup__label" for="size-M"><span class="popup__size">M</span></label>
+
+        <input class="popup__input" type="radio" value="size" name="size" id="size-L">
+        <label class="popup__label" for="size-L"><span class="popup__size">L</span></label>
+      </div>
+
+        <!-- <label for="size-L"><span class="popup__size">L</span></label> -->
+
+      <button type="submit" class="popup__button">Добавить</button>
+    </form>
+  </div>
+</section>
+
+      <script src="popup.js"></script>
 </body>
 
 </html>
