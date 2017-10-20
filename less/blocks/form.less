@@ -133,11 +133,11 @@ input[type="radio"] + label:hover::before {
 input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 6px;
+  left: 8px;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 22px;
+  height: 22px;
   background-image: url("../img/icon-tick.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -178,6 +178,10 @@ input[type="text"]:checked {
   width: 100%;
   margin-bottom: 0;
   margin-top: 20px;
+
+  &:last-child {
+    margin-bottom: 5px;
+  }
 }
 
 .form__item {
@@ -193,7 +197,7 @@ input[type="text"]:checked {
 }
 
 .form__item:nth-child(4) .form__border {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .form__item:nth-child(5) .form__border {
@@ -202,7 +206,7 @@ input[type="text"]:checked {
 
 .form__item:nth-child(6) .form__border {
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .form__text {
@@ -319,8 +323,8 @@ input[type="text"]:checked {
   }
 
   input[type="radio"] + label::before {
-    width: 50px;
-    height: 50px;
+    width: 51px;
+    height: 51px;
   }
 
   input[type="radio"] + label {
@@ -340,8 +344,8 @@ input[type="text"]:checked {
 
   input[type="checkbox"] + label {
     padding-left: 85px;
-    margin-top: 25px;
-    padding-bottom: 4px;
+    margin-top: 23px;
+    padding-bottom: 6px;
     padding-top: 8px;
   }
 
@@ -353,6 +357,8 @@ input[type="text"]:checked {
   input[type="checkbox"]:checked + label::after {
     width: 53px;
     height: 53px;
+    margin-top: -5px;
+    margin-left: -5px;
   }
 
   .form__type-list {
@@ -379,17 +385,21 @@ input[type="text"]:checked {
   }
 
   .form__item:nth-child(3) {
-    margin-top: -35px;
+    margin-top: -37px;
   }
 
   .form__item:nth-child(4) {
-    margin: -25px 0 0;
+    margin: -10px 0 0;
     padding-top: 40px;
   }
 
   .form__item:nth-child(5) {
-    padding-bottom: 36px;
-    margin: 0;
+    padding-bottom: 43px;
+    margin: -3px;
+  }
+  .form__item:nth-child(6) {
+    padding-bottom: 43px;
+    margin-top: -10px;
   }
 
   .form__fio-list {
@@ -414,13 +424,17 @@ input[type="text"]:checked {
     line-height: 16px;
   }
 
-  .form__item:nth-child(2) .form__name,
+  .form__item:nth-child(2) .form__name {
+    top: 45px;
+  }
   .form__item:nth-child(3) .form__name {
     top: 50px;
   }
-
+  .form__item:nth-child(4) .form__name {
+    top: -10px;
+  }
   .form__item:nth-child(6) .form__name {
-    top: 30px;
+    top: 40px;
   }
 
   .form__item:nth-child(6) .form__data {
@@ -458,7 +472,6 @@ input[type="text"]:checked {
   }
 
   .form__toggle-flex {
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -490,8 +503,8 @@ input[type="text"]:checked {
   }
 
   div.form__toggle-flex {
-    margin-top: 40px;
-    margin-bottom: 45px;
+    margin-top: -43px;
+    margin-bottom: 55px;
   }
 }
 @media (min-width: @desktop-width) {
