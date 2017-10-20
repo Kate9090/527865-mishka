@@ -1,10 +1,18 @@
 .catalog-list__item {
   display: flex;
   width: 100%;
-  border: 1px solid lightgrey;
-  margin: 0 auto 30px;
+  border: 1px solid @light-grey;
+  margin: 0 auto 35px;
   flex-wrap: wrap;
   flex-direction: row;
+
+  &:hover {
+    box-shadow: 0 3px 10px 3px @light-grey;
+  }
+
+  &:active {
+    box-shadow: 0 3px 3px 3px @light-grey;
+  }
 }
 
 .catalog-list__description {
@@ -19,6 +27,34 @@
   line-height: 24px;
   font-weight: bold;
   margin-top: 20px;
+  color: #000000;
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
+}
+
+.catalog-list__basket {
+  display: block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.catalog-list__basket svg {
+  opacity: 0.4;
+
+  &:hover {
+    opacity: 0.8;
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .catalog-list__caracteristics {
@@ -33,7 +69,7 @@
   font-size: 13px;
   line-height: 30px;
   font-weight: bold;
-  padding-top: 2px;
+  margin-top: -2px;
 }
 
 .catalog-list__picture {
@@ -44,6 +80,14 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin-top: 30px;
+}
+
+.catalog-list__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -58,7 +102,7 @@
   }
 
   .catalog-list__item {
-    margin: 10px 0 13px;
+    margin: 10px 0;
   }
 
   .catalog-list__description {
@@ -81,22 +125,22 @@
     font-size: 17px;
     line-height: 24px;
     font-weight: bold;
+  }
+
+  .catalog-list__price {
+    margin-top: 175px;
+  }
+
+  .catalog-list__item:last-child .catalog-list__price {
     margin-top: 150px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .title-wrapper {
-    margin-bottom: 130px;
-  }
-
   .catalog-list__item {
     width: 315px;
     margin-top: 0;
-
-    &--toybasket .catalog-list__picture {
-      position: relative;
-    }
+    align-items: flex-start;
   }
 
   .catalog-list {
@@ -112,13 +156,17 @@
   .catalog-list__description {
     width: 255px;
     text-align: left;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 60px;
+    margin-top: 22px;
+    margin-left: 25px;
+    margin-bottom: 20px;
   }
 
-  .catalog-list__cash {
-    margin-top: 10px;
+  .catalog-list__price {
+    margin-top: 40px;
+  }
+
+  .catalog-list__item:last-child .catalog-list__price {
+    margin-top: 15px;
   }
 
   .catalog-list__name {

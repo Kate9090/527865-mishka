@@ -1,8 +1,8 @@
 .main-nav__list {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  // align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
   flex-wrap: wrap;
   font-weight: bold;
   color: #000000;
@@ -15,7 +15,22 @@
 .main-nav__logo {
   display: block;
   flex-grow: 1;
-  padding: 7px 0;
+  padding: 0;
+
+  &--mobile {
+    display: block;
+    margin: 15px auto 10px;
+    width: 86px;
+    height: 35px;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
@@ -36,7 +51,11 @@
 
   &:active,
   &:hover {
-    background-color: red;
+    background-image: url("../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
   }
 
   .main-nav__list--closed .main-nav__toggle::before {
@@ -82,7 +101,7 @@
   }
 }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
   .main-nav__list--closed .main-nav__mobile {
     display: none;
 
@@ -102,11 +121,53 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__list {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // align-items: center;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
     font-weight: bold;
     color: #000000;
+  }
+
+  .main-nav__logo {
+    &--tablet {
+      display: block;
+      width: 112px;
+      height: 46px;
+      z-index: 1000;
+      opacity: 1;
+    }
+
+    &--mobile {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    &--desktop {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__logo {
+    &--desktop {
+      display: block;
+      width: 148px;
+      height: 73px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+      width: 0;
+      height: 0;
+    }
   }
 }

@@ -5,10 +5,10 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  margin-top: 30px;
 }
 
 .advantages-list__item {
-  padding-top: 67px;
   padding-bottom: 16px;
   padding-right: 3px;
   width: 300px;
@@ -16,49 +16,61 @@
   line-height: 20px;
   font-weight: bold;
   color: @button-color;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 
-  &--material {
-    background-image: url("../img/icon-feature-flower.svg");
-    background-position: 5px 10px;
-    background-repeat: no-repeat;
-    // fill: #ffb600;
+  & svg {
+    fill: @green;
   }
 
-  &--style {
-    background-image: url("../img/icon-feature-money.svg");
-    background-position: 0 10px;
-    background-repeat: no-repeat;
+  & a {
+    display: block;
+    margin: 20px 0;
+    color: #000000;
   }
 
-  &--likes {
-    background-image: url("../img/icon-feature-heart.svg");
-    background-position: 8px 15px;
-    background-repeat: no-repeat;
+  &:nth-child(4) a {
+    display: block;
+    margin: 15px 0;
+    color: #000000;
   }
 
-  &--handmade {
-    background-image: url("../img/icon-feature-ball.svg");
-    background-position: 0 10px;
-    background-repeat: no-repeat;
+  &--material svg {
+    margin-left: 8px;
   }
 
-  &--support {
-    background-image: url("../img/icon-feature-rocket.svg");
-    background-position: -5px 15px;
-    background-repeat: no-repeat;
-    z-index: 100;
+  &--style svg {
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: 8px;
   }
 
-  &--present {
-    background-image: url("../img/icon-feature-gift.svg");
-    background-position: 0 15px;
-    background-repeat: no-repeat;
+  &--likes svg {
+    margin-left: 8px;
+    margin-top: -3px;
+  }
+
+  &--handmade svg {
+    margin-left: 2px;
+    margin-top: -2px;
+  }
+
+  &--support svg {
+    margin-left: -6px;
+    margin-top: 1px;
+    margin-bottom: 7px;
+  }
+
+  &--present svg {
+    margin-top: -8px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages-list {
     width: 100%;
+    margin-top: 45px;
   }
 
   .advantages-list__item {
@@ -76,6 +88,10 @@
       order: 3;
     }
 
+    &--style svg {
+      margin-top: -10px;
+    }
+
     &--likes {
       order: 5;
     }
@@ -88,6 +104,10 @@
       order: 4;
     }
 
+    &--support svg {
+      margin-top: -5px;
+    }
+
     &--present {
       order: 6;
     }
@@ -97,7 +117,7 @@
 @media (min-width: @desktop-width) {
   .advantages-list__item {
     font-size: 20px;
-    padding-right: 100px;
+    padding-right: 0;
   }
 
   .advantages-list {
