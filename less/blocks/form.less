@@ -238,7 +238,7 @@ input[type="text"]:checked {
 }
 
 .form__text-textarea[placeholder] {
-  padding: 10px 20px;
+  padding: 15px;
 }
 
 .form__toggle-flex {
@@ -272,6 +272,10 @@ input[type="text"]:checked {
   bottom: 10px;
 
   &:hover {
+    fill: @green;
+  }
+
+  &:active {
     fill: @green;
   }
 }
@@ -321,7 +325,13 @@ input[type="text"]:checked {
   }
 
   .form__flex label {
-    padding-right: 33px;
+    padding-right: 25px;
+  }
+
+  .form__flex:first-child input {
+    // padding-bottom: 20px;
+    margin-top: -3px;
+    margin-bottom: 8px;
   }
 
   .form__color:nth-child(2n) {
@@ -499,15 +509,11 @@ input[type="text"]:checked {
   }
 
   .form__tel svg {
-    width: 30px;
-    height: 30px;
-    margin-left: 460px;
+    right: 30px;
   }
 
   .form__mail svg {
-    width: 30px;
-    height: 30px;
-    margin-left: 460px;
+    right:30px
   }
 
   div.form__toggle-flex {
@@ -521,17 +527,18 @@ input[type="text"]:checked {
   }
 
   .form__tel svg {
-    margin-left: 660px;
+    right: 5px;
   }
-  // .form__mail svg {
-  //   margin-left: 660px;
-  // }
+  .form__mail svg {
+    right: 5px;
+  }
   //
   // .form__color-list {
   //   margin-right: 70px;
   // }
   .form__color:nth-child(2n) {
     padding-left: 0;
+    top: -5px;
   }
 
   .form__legend {
@@ -549,6 +556,12 @@ input[type="text"]:checked {
     margin-right: 175px;
     margin-top: 46px;
     margin-bottom: 17px;
+  }
+
+  .form__flex:first-child input {
+    // padding-bottom: 20px;
+    margin-top: 4px;
+    margin-bottom: 6px;
   }
 
   .form__data {
@@ -573,7 +586,7 @@ input[type="text"]:checked {
   }
 
   div.form__toggle-flex {
-    margin-top: -5px;
+    margin-top: -45px;
     margin-bottom: 50px;
   }
   // div.form__toggle-flex {
