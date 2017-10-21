@@ -238,7 +238,7 @@ input[type="text"]:checked {
 }
 
 .form__text-textarea[placeholder] {
-  padding: 10px 20px;
+  padding: 15px;
 }
 
 .form__toggle-flex {
@@ -274,6 +274,10 @@ input[type="text"]:checked {
   &:hover {
     fill: @green;
   }
+
+  &:active {
+    fill: @green;
+  }
 }
 
 .form__mail {
@@ -290,9 +294,9 @@ input[type="text"]:checked {
   right: 10px;
   bottom: 5px;
 
-      &:hover {
-        fill: @green;
-      }
+  &:hover {
+    fill: @green;
+  }
 }
 
 .form__mail input,
@@ -303,6 +307,7 @@ input[type="text"]:checked {
 .form__fio-list label {
   font-weight: bold;
 }
+
 @media (min-width: @tablet-width) {
   .form__item:nth-child(2),
   .form__item:nth-child(4),
@@ -321,7 +326,13 @@ input[type="text"]:checked {
   }
 
   .form__flex label {
-    padding-right: 33px;
+    padding-right: 25px;
+  }
+
+  .form__flex:first-child input {
+    // padding-bottom: 20px;
+    margin-top: -3px;
+    margin-bottom: 8px;
   }
 
   .form__color:nth-child(2n) {
@@ -405,6 +416,7 @@ input[type="text"]:checked {
     padding-bottom: 43px;
     margin: -3px;
   }
+
   .form__item:nth-child(6) {
     padding-bottom: 43px;
     margin-top: -10px;
@@ -435,12 +447,15 @@ input[type="text"]:checked {
   .form__item:nth-child(2) .form__name {
     top: 45px;
   }
+
   .form__item:nth-child(3) .form__name {
     top: 50px;
   }
+
   .form__item:nth-child(4) .form__name {
     top: -10px;
   }
+
   .form__item:nth-child(6) .form__name {
     top: 40px;
   }
@@ -499,15 +514,11 @@ input[type="text"]:checked {
   }
 
   .form__tel svg {
-    width: 30px;
-    height: 30px;
-    margin-left: 460px;
+    right: 30px;
   }
 
   .form__mail svg {
-    width: 30px;
-    height: 30px;
-    margin-left: 460px;
+    right: 30px;
   }
 
   div.form__toggle-flex {
@@ -515,23 +526,26 @@ input[type="text"]:checked {
     margin-bottom: 55px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .form__color {
     width: 30%;
   }
 
   .form__tel svg {
-    margin-left: 660px;
+    right: 5px;
   }
-  // .form__mail svg {
-  //   margin-left: 660px;
-  // }
+
+  .form__mail svg {
+    right: 5px;
+  }
   //
   // .form__color-list {
   //   margin-right: 70px;
   // }
   .form__color:nth-child(2n) {
     padding-left: 0;
+    top: -5px;
   }
 
   .form__legend {
@@ -549,6 +563,12 @@ input[type="text"]:checked {
     margin-right: 175px;
     margin-top: 46px;
     margin-bottom: 17px;
+  }
+
+  .form__flex:first-child input {
+    // padding-bottom: 20px;
+    margin-top: 4px;
+    margin-bottom: 6px;
   }
 
   .form__data {
@@ -573,7 +593,7 @@ input[type="text"]:checked {
   }
 
   div.form__toggle-flex {
-    margin-top: -5px;
+    margin-top: -45px;
     margin-bottom: 50px;
   }
   // div.form__toggle-flex {
