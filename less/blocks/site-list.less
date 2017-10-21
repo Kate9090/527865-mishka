@@ -91,6 +91,7 @@
 
     & svg {
       opacity: 1;
+      margin-top: 16px;
     }
 
 & a{
@@ -179,10 +180,11 @@
 @media (min-width: @desktop-width) {
   .site-list__item {
     min-height: 83px;
+    padding-top: 30px;
 
     & a {
       padding-top: 20px;
-      padding-bottom: 10px;
+      padding-bottom: 8px;
     }
   }
   .site-list__item:first-child {
@@ -190,22 +192,28 @@
     width: 28%;
     flex-grow: 1;
     text-align: center;
-  }
+    padding-bottom: 4px;
 
-  .site-list__item:first-child a {
-    margin-top: 15px;
+& a {
+    margin-top: 0px;
     margin-left: -60px;
     // padding: 0 auto;
   }
+
+  & svg {
+    margin-top: 10px;
+  }
+}
 
   .site-list__item:nth-child(2) {
     order: 1;
     flex-grow: 1;
     width: 17%;
     text-align: left;
-    padding-bottom: 24px;
+    padding-bottom: 33px;
     border-right: 1px solid @light-grey;
     border-bottom: 1px solid @light-grey;
+padding-top: 35px;
   }
 
   .site-list__item:nth-child(3) {
@@ -213,12 +221,14 @@
     width: 20%;
     flex-grow: 1;
     border-bottom: 1px solid @light-grey;
-    padding-bottom: 24px;
+    padding-bottom: 33px;
+    padding-top: 35px;
   }
 
   .site-list__item:nth-child(4) {
     order: 3;
     font-size: 0;
+    padding-bottom: 10px;
 
     & svg {
       margin-top: 12px;
@@ -246,16 +256,16 @@
     order: 6;
     width: 16%;
     // flex-grow: 1;
-    margin-top: -5px;
-    padding-top:0;
+    margin-top: 0px;
+    padding-top: 15px;
     text-align: left;
     border: 0;
   }
 
   .site-list__item:nth-child(7) {
     display: block;
-    margin-top: -5px;
-    padding-top:0;
+    margin-top: 0px;
+    padding-top: 15px;
     order: 7;
     width: 18%;
     // flex-grow: 1;
@@ -269,8 +279,8 @@
     order: 8;
     width: 48%;
     flex-grow: 1;
-    margin-top: -5px;
-    padding-top:0;
+    margin-top: 0px;
+    padding-top: 15px;
     border: 0;
   }
 
