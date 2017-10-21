@@ -299,16 +299,18 @@ input[type="text"]:checked {
   }
 }
 
-.form__mail input,
-.form__tel input {
-  background-color: @light-grey;
-}
+
 
 .form__fio-list label {
   font-weight: bold;
 }
 
 @media (min-width: @tablet-width) {
+  .form__mail input,
+  .form__tel input {
+    background-color: @light-grey;
+  }
+
   .form__item:nth-child(2),
   .form__item:nth-child(4),
   .form__item:nth-child(5) {
