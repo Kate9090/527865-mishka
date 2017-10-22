@@ -14,7 +14,13 @@
     "gulp-less": "^3.3.2",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
-    "gulp-rename": "^1.2.2",
+    "gulp-posthtml": "^3.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglyfly": "^1.4.2",
+    "gulp-webp": "^2.3.0",
+    "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.0",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -24,6 +30,10 @@
     "stylelint": "stylelint less/**/*.less --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp style",
+    "images": "gulp images",
+    "webp": "gulp webp",
+    "sprite": "gulp sprite",
+    "scripts": "gulp uglify",
     "start": "gulp serve"
   },
   "browserslist": [
@@ -41,5 +51,10 @@
   ],
   "engines": {
     "node": "8.2"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "posthtml-include": "^1.1.0"
   }
 }
