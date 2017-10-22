@@ -40,7 +40,35 @@ var setupKeyDownHandler = function (event) {
     popup.classList.remove("popup--show");
   }
 };
-
+//
 document.addEventListener('keydown', function () {
   setupKeyDownHandler(event);
 });
+var overlay = document.querySelector(".popup__bg");
+var modal = document.querySelector(".popup");
+var modalButton = document.querySelector(".popup-button");
+var buyButton = document.querySelectorAll(".catalog-list__basket");
+
+if (overlay) {
+for (var i = 0; i < buyButton.length; i++) buyButton[i].addEventListener("click", function(event) {
+event.preventDefault();
+overlay.classList.add("overlay--on");
+});
+
+overlay.addEventListener("click", function() {
+overlay.classList.remove("overlay--on");
+});
+modal.addEventListener("click", function(event) {
+event.stopPropagation();
+});
+
+modalButton.addEventListener("submit", function() {
+overlay.classList.remove("overlay--on");
+});
+
+window.addEventListener("keydown", function(event) {
+if (event.keyCode === 27) {
+overlay.classList.remove("overlay--on");
+}
+});
+}

@@ -130,8 +130,10 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <nav class="main-nav">
-        <ul class="main-nav__list main-nav__list--closed site-list">
+            <nav class="main-nav main-nav--opened main-nav--nojs">
+              <a class="main-nav__toggle"></a>
+              <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
           <li class="main-nav__logo site-list__item site-list__item--active">
             <a class="site-list__logo" href="index.html">
               <svg class="main-nav__logo--mobile">
@@ -145,7 +147,6 @@
               </svg>
             </a>
           </li>
-          <li class="main-nav__toggle site-list__item"></li>
           <li class="site-list__item main-nav__mobile">
             <a href="catalog.html">Каталог товаров</a>
           </li>
@@ -174,6 +175,7 @@
             <a href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
+      </div>
       </nav>
     </div>
   </header>
@@ -365,7 +367,22 @@
       </form>
     </div>
   </section>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
   <script src="popup.js"></script>
 </body>
 
