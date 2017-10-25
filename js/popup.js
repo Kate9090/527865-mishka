@@ -12,7 +12,7 @@
 var popupOpenLink = document.querySelector(".popup-open-link");
 var popup = document.querySelector(".popup");
 var popupOverlay = document.querySelector(".popup_bg");
-var productBuy = document.querySelectorAll(".catalog__add-link");
+var productBuy = document.querySelectorAll(".add-link");
 var ESCAPE_KEY_CODE = 27;
 
 if (popupOpenLink) {

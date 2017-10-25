@@ -304,6 +304,10 @@ input[type="text"]:checked {
 }
 
 @media (min-width: @tablet-width) {
+  .form__wrapper{
+    padding-left: 15px;
+  }
+
   .form__mail input,
   .form__tel input {
     background-color: @light-grey;
@@ -331,13 +335,17 @@ input[type="text"]:checked {
 
   .form__flex:first-child input {
     // padding-bottom: 20px;
-    margin-top: -3px;
-    margin-bottom: 8px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+  }
+
+  .form__flex:last-child input {
+    margin-top: 8px;
   }
 
   .form__color:nth-child(2n) {
     .grid();
-    padding-left: 10px;
+    padding-left: 13px;
     // display:block;
   }
 
@@ -530,6 +538,10 @@ input[type="text"]:checked {
 @media (min-width: @desktop-width) {
   .form__color {
     width: 30%;
+  }
+
+  .form__wrapper{
+    padding-left: 0;
   }
 
   .form__tel svg {
