@@ -12,6 +12,14 @@
   position: relative;
   min-height: 60px;
   margin: 0 auto;
+
+  &__mobile {
+    padding: 30px 0;
+  }
+}
+
+.main-nav__desktop {
+  display: none;
 }
 
 .main-nav__logo {
@@ -148,11 +156,13 @@
 
   .main-nav__list {
     // align-items: center;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    font-weight: bold;
-    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    // flex-wrap: wrap;
+    // margin: 0 auto;
+    // z-index: 100;
   }
 
   .main-nav__logo {
